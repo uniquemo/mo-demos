@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/moyongxin/.nvm/versions/node/v6.3.0/bin/node',
+1 verbose cli   '/Users/moyongxin/.nvm/versions/node/v6.3.0/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '@mtfe/turbo@next',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @mtfe/turbo@next
+8 silly fetchNamedPackageData @mtfe/turbo
+9 silly mapToRegistry name @mtfe/turbo
+10 silly mapToRegistry scope (from package name) @mtfe
+11 verbose mapToRegistry no registry URL found in name for scope @mtfe
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: '@mtfe/turbo',
+14 silly mapToRegistry   scope: '@mtfe',
+14 silly mapToRegistry   escapedName: '@mtfe%2fturbo',
+14 silly mapToRegistry   name: '@mtfe/turbo',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri https://registry.npmjs.org/@mtfe%2fturbo
+16 verbose request uri https://registry.npmjs.org/@mtfe%2fturbo
+17 verbose request no auth needed
+18 info attempt registry request try #1 at 16:21:04
+19 verbose request using bearer token for auth
+20 verbose request id 91ebdd2e2485a5c7
+21 http request GET https://registry.npmjs.org/@mtfe%2fturbo
+22 http 404 https://registry.npmjs.org/@mtfe%2fturbo
+23 verbose headers { date: 'Wed, 25 Jul 2018 08:21:06 GMT',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'content-length': '21',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'set-cookie': [ '__cfduid=d95db9cd17ab94fa8bb5592eb5e95a3961532506866; expires=Thu, 25-Jul-19 08:21:06 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+23 verbose headers   'cf-ray': '43fd360b9efa20d2-LAX',
+23 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 verbose headers   'npm-notice': 'Due to a recent security incident, all user tokens have been invalidated. Please see https://status.npmjs.org/incidents/dn7c1fgrr7ng for more details. To generate a new token, visit https://www.npmjs.com/settings/~/tokens or run "npm login".',
+23 verbose headers   server: 'cloudflare' }
+24 warn notice Due to a recent security incident, all user tokens have been invalidated. Please see https://status.npmjs.org/incidents/dn7c1fgrr7ng for more details. To generate a new token, visit https://www.npmjs.com/settings/~/tokens or run "npm login".
+25 silly get cb [ 404,
+25 silly get   { date: 'Wed, 25 Jul 2018 08:21:06 GMT',
+25 silly get     'content-type': 'application/json',
+25 silly get     'content-length': '21',
+25 silly get     connection: 'keep-alive',
+25 silly get     'set-cookie': [ '__cfduid=d95db9cd17ab94fa8bb5592eb5e95a3961532506866; expires=Thu, 25-Jul-19 08:21:06 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+25 silly get     'cf-ray': '43fd360b9efa20d2-LAX',
+25 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+25 silly get     'npm-notice': 'Due to a recent security incident, all user tokens have been invalidated. Please see https://status.npmjs.org/incidents/dn7c1fgrr7ng for more details. To generate a new token, visit https://www.npmjs.com/settings/~/tokens or run "npm login".',
+25 silly get     server: 'cloudflare' } ]
+26 silly fetchPackageMetaData Error: Not found : @mtfe/turbo
+26 silly fetchPackageMetaData     at makeError (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+26 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+26 silly fetchPackageMetaData     at Request._callback (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+26 silly fetchPackageMetaData     at Request.self.callback (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+26 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+26 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+26 silly fetchPackageMetaData     at Request.<anonymous> (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+26 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+26 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+26 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
+26 silly fetchPackageMetaData  error for @mtfe/turbo@next { Error: Not found : @mtfe/turbo
+26 silly fetchPackageMetaData     at makeError (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+26 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+26 silly fetchPackageMetaData     at Request._callback (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+26 silly fetchPackageMetaData     at Request.self.callback (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+26 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+26 silly fetchPackageMetaData     at Request.emit (events.js:191:7)
+26 silly fetchPackageMetaData     at Request.<anonymous> (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+26 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+26 silly fetchPackageMetaData     at Request.emit (events.js:188:7)
+26 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/request/request.js:988:12) pkgid: '@mtfe/turbo', statusCode: 404, code: 'E404' }
+27 silly rollbackFailedOptional Starting
+28 silly rollbackFailedOptional Finishing
+29 silly runTopLevelLifecycles Starting
+30 silly runTopLevelLifecycles Finishing
+31 silly install printInstalled
+32 verbose stack Error: Not found : @mtfe/turbo
+32 verbose stack     at makeError (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+32 verbose stack     at CachingRegistryClient.<anonymous> (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+32 verbose stack     at Request._callback (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+32 verbose stack     at Request.self.callback (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/request/request.js:200:22)
+32 verbose stack     at emitTwo (events.js:106:13)
+32 verbose stack     at Request.emit (events.js:191:7)
+32 verbose stack     at Request.<anonymous> (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+32 verbose stack     at emitOne (events.js:101:20)
+32 verbose stack     at Request.emit (events.js:188:7)
+32 verbose stack     at IncomingMessage.<anonymous> (/Users/moyongxin/.nvm/versions/node/v6.3.0/lib/node_modules/npm/node_modules/request/request.js:988:12)
+33 verbose statusCode 404
+34 verbose pkgid @mtfe/turbo
+35 verbose cwd /Users/moyongxin/github/mo-demos/turbo-demo
+36 error Darwin 15.6.0
+37 error argv "/Users/moyongxin/.nvm/versions/node/v6.3.0/bin/node" "/Users/moyongxin/.nvm/versions/node/v6.3.0/bin/npm" "i" "@mtfe/turbo@next" "--save"
+38 error node v6.3.0
+39 error npm  v3.10.3
+40 error code E404
+41 error 404 Not found : @mtfe/turbo
+42 error 404
+43 error 404 '@mtfe/turbo' is not in the npm registry.
+44 error 404 You should bug the author to publish it (or use the name yourself!)
+45 error 404 Note that you can also install from a
+46 error 404 tarball, folder, http url, or git url.
+47 verbose exit [ 1, true ]
