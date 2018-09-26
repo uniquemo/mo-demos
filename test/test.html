@@ -1,0 +1,21 @@
+<script>
+
+function capital(str) {
+    var reg = /[^a-zA-Z0-9]/g;
+    str = str.replace(reg, ' ');
+    str = str.trim();
+    var strArr = str.split(' ');
+    var result = [];
+    console.log(strArr.length);
+    for (var i = 0; i < strArr.length; i++) {
+        var tmp = strArr[i].toLowerCase();
+        tmp[0] = String(tmp[0]).toUpperCase();
+        console.log(tmp[0])
+        result.push(tmp);
+    }
+    var finalStr = result.join('');
+    finalStr[0] = finalStr[0].toLowerCase();
+    return finalStr;
+}
+
+</script>
