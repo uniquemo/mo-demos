@@ -1,6 +1,6 @@
 {
   "name": "@unique/module1",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@unique/module2": "^0.0.2",
+    "@unique/module2": "^0.0.3",
     "lodash": "^4.17.11",
     "react-dom": "^16.6.3"
   },
