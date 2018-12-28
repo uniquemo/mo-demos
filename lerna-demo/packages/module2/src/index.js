@@ -1,3 +1,3 @@
 export default () => {
-  console.log('module2')
+  console.log('module3')
 }
