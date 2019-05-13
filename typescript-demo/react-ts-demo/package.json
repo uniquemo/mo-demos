@@ -8,6 +8,7 @@
     "@types/material-ui": "^0.21.6",
     "@types/normalizr": "^2.0.18",
     "@types/react-redux": "^7.0.5",
+    "@types/react-select": "^2.0.17",
     "@types/semver": "^6.0.0",
     "@types/underscore": "^1.8.14",
     "@types/webpack": "^4.4.29",
