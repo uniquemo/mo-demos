@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.6.2"
+    "koa": "^2.6.2",
+    "path-to-regexp": "^3.0.0"
   }
 }
