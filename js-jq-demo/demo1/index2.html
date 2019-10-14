@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+<script>
+
+  //// 定义变量
+
+  // const 用于定义常量，定义后不可更改
+  const book = 'book one'
+
+  // let 用于定义变量
+  let name = 'test'
+  let price       // undefined
+  price = 10
+  price = 'abc'
+  price = true
+  price = null
+  price = undefined
+
+
+  //// 模板字符串 大括号内可以是任意的 js 表达式
+
+  const time = '2019-01-01'
+  const displayText = `Time is ${time}`
+
+  const price = 10
+  const num = 5
+  const priceText = `Total price is ${price * num}`
+
+
+  //// 函数
+
+  function sayHello (name) {
+    console.log(`hello ${name}`)
+  }
+
+  const sayHello = function(name) {
+    console.log(`hello ${name}`)
+  }
+
+  const sayHello = (name) => {
+    console.log(`hello ${name}`)
+  }
+
+  // 函数可作为参数传递
+  const doSomething = (name, age, callback) => {
+    console.log(age)
+    callback(name)
+  }
+
+  // 调用函数
+  doSomething('jack', 18, sayHello)
+
+
+  //// 数组
+
+  // 创建数组
+  const arr = [1, 2, 3]
+  console.log(arr.length)   // 3
+
+  // 访问数组元素
+  console.log(arr[0] + arr[1])
+
+  // 合并数组
+  const arr1 = [1]
+  const arr2 = [2, 3]
+  const result = arr1.concat(arr2)  // [1, 2, 3]
+
+  // 用数组元素组成字符串
+  const arr = ['a', 'b', 'c']
+  const result = arr.join(' ')    // a b c
+
+  // 数组末尾添加新的元素
+  const arr = ['a', 'b', 'c']
+  arr.push('d')   // ['a', 'b', 'c', 'd']
+
+  // 删除数组最后一个元素
+  const value = arr.pop()   // d
+
+  // 在数组开头添加元素
+  arr.unshift('first')
+
+  // 删除数组第一个元素
+  arr.shift()
+
+  // 更多操作
+  // splice()、sort()...
+
+
+  //// 对象
+
+  const str = new String('abc')
+  const num = new Number(10)
+  const arr = new Array(3)  // arr.length === 3
+
+  const date = new Date()
+  date.valueOf()    // 日期转换成毫秒值
+
+  const reg = new RegExp('^abc')  // /^abc/
+
+  // 通过字面量创建对象
+  const person = {
+    name: 'jack',
+    age: 18
+  }
+  person.weight = 50
+  person.talk = function() {
+    // ....
+  }
+
+  // 使用 new Object() 创建对象
+  const person = new Object()
+  person.name = 'jack'
+  person.age = 18
+
+  // 使用函数来定义对象，然后创建新的对象实例
+  function Person (name, age) {
+    this.name = name
+    this.age = age
+  }
+  const person = new Person('jack', 18)
+
+  // 访问对象的属性和方法
+  console.log(person.name)
+  person.talk()
+
+
+  //// 数组循环与对象循环
+
+  /// 数组循环
+
+  // for 语句
+  const arr = [1, 2, 3, 4]
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+  }
+
+  // forEach 语句
+  const arr = [1, 2, 3, 4]
+  arr.forEach((item, index) => {
+    arr[index] = item + 1
+  })
+
+  // map 方法
+  const arr = [1, 2, 3, 4]
+  const newArr = arr.map(item => item + 1)
+
+  // filter 方法
+  const arr = [1, 2, 3, 4]
+  const filterArr = arr.filter(item => item > 2)
+
+  // every 方法
+  const arr = [1, 2, 3, 4]
+  const result = arr.every(item => item > 0)  // true
+
+  // some 方法
+  const arr = [1, 2, 3, 4]
+  const result = arr.some(item => item > 5)  // false
+
+  /// 对象循环
+
+  // for-in 语句
+  const obj = {
+    key1: 'key1 value',
+    key2: 'key2 value',
+    key3: 'key3 value'
+  }
+  for (const key in obj) {
+    console.log(obj[key])
+  }
+
+  // for-of 语句
+  const arr = [{ name: 'bb' }, 5, 'test']
+  for (const item of arr) {
+    console.log(item)
+  }
+
+  // 使用 Object.keys() 遍历
+  const obj = {
+    key1: 'key1 value',
+    key2: 'key2 value',
+    key3: 'key3 value'
+  }
+  // Object.keys(obj) => ['key1', 'key2', 'key3']
+  Object.keys(obj).forEach(key => {
+    console.log(obj[key])
+  })
+
+  // Object.values()
+  const obj = {
+    key1: 'key1 value',
+    key2: 'key2 value',
+    key3: 'key3 value'
+  }
+  // Object.values(obj) => ['key1 value', 'key2 value', 'key3 value']
+  Object.values(obj).forEach(value => {
+    console.log(value)
+  })
+
+  // Object.entries()
+  const obj = {
+    key1: 'key1 value',
+    key2: 'key2 value',
+    key3: 'key3 value'
+  }
+  /*
+    Object.entries(obj) => [
+      ['key1', 'key1 value'],
+      ['key2', 'key2 value'],
+      ['key3', 'key3 value']
+    ]
+  */
+  Object.entries(obj).forEach(([key, value]) => {
+    console.log(key, value)
+  })
+
+
+</script>
+
+</body>
+</html>
