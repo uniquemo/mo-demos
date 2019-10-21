@@ -1,0 +1,61 @@
+Arguments: 
+  /Users/yongxin.mo/.nvm/versions/node/v12.10.0/bin/node /usr/local/Cellar/yarn/1.12.3/libexec/bin/yarn.js
+
+PATH: 
+  /Users/yongxin.mo/.nvm/versions/node/v12.10.0/bin:/Users/yongxin.mo/.gvm/bin:/usr/local/Cellar/mysql@5.6/5.6.42/bin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  12.10.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.org/generator-create-infra-app: Not found
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.12.3/libexec/lib/cli.js:65894:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.12.3/libexec/lib/cli.js:129018:22)
+      at Request.emit (events.js:209:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.12.3/libexec/lib/cli.js:129990:10)
+      at Request.emit (events.js:209:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.12.3/libexec/lib/cli.js:129912:12)
+      at Object.onceWrapper (events.js:298:28)
+      at IncomingMessage.emit (events.js:214:15)
+      at endReadableNT (_stream_readable.js:1178:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
+
+npm manifest: 
+  {
+    "name": "koa-demos",
+    "version": "1.0.0",
+    "description": "a collection of simple demos of Koa",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "Koa",
+      "Node"
+    ],
+    "author": "Ruan Yifeng",
+    "license": "ISC",
+    "dependencies": {
+      "fs.promised": "^3.0.0",
+      "koa": "^2.3.0",
+      "koa-body": "^2.3.0",
+      "koa-compose": "^4.0.0",
+      "koa-route": "^3.2.0",
+      "koa-static": "^4.0.1"
+    },
+    "devDependencies": {
+      "generator-create-infra-app": "^0.1.0-beta.1",
+      "generator-jest": "^1.7.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
