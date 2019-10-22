@@ -1,5 +1,8 @@
-const Koa = require('koa');
-const app = new Koa();
+const Koa = require('koa')
+const Router = require('koa-router')
+
+const app = new Koa()
+const router = new Router()
 
 /*
 // logger
@@ -26,10 +29,12 @@ app.use(async ctx => {
 });
 */
 
-app.use(async function (ctx, next) {
-  ctx.set('Access-Control-Allow-Origin', '*')
+router.get('/api/v1/test', async (ctx, next) => {
+  // ctx.router available
+  ctx.set('Access-Control-Allow-Origin', 'http://localhost:4200')
   ctx.set('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, DELETE, PUT')
   ctx.set('Access-Control-Allow-Headers', 'X-Requested-With, User-Agent, Referer, Content-Type, Cache-Control,accesstoken')
+  ctx.set('Access-Control-Allow-Credentials', 'true')
 
   console.log(ctx.request)
   // ctx.body = '<div>This is server response.</div>'
@@ -44,9 +49,70 @@ app.use(async function (ctx, next) {
   await delay(2000);
 
   ctx.body = {
-    text: '<div>This is response</div>',
+    text: logs,
     nextStart: Math.floor(Math.random() * 100 - 1)
   }
 });
 
+app
+  .use(router.routes())
+  .use(router.allowedMethods());
+
 app.listen(3001);
+
+var logs = `
+  <div>This is response</div>
+  <div><a>hhhhhhh</a></div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div>This is response</div>
+  <div><a>last line</a></div>
+  <div><a>last line</a></div>
+`
