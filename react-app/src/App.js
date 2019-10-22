@@ -1,45 +1,48 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  state = {
-    count: 0
+  constructor(props) {
+    super(props)
+
+    this.timer = null
+    this.state = {
+      data: ''
+    }
+  }
+  componentDidMount() {
+    // this.updateUI()
   }
 
-  handleAdd = () => {
-    const { count } = this.state
-    this.state.count = count + 1
-    console.log('加法：', this.state.count)
+  fetchData() {
+    if (!this.timer) {
+      return
+    }
+
+    window.fetch('http://localhost:3001')
+      .then(response => {
+        console.log(response)
+        return response.text()
+      })
+      .then(data => {
+        console.log('data => ', data)
+        this.setState({ data: this.state.data + data })
+      })
   }
 
-  handleSubtract = () => {
-    const { count } = this.state
-    this.setState({
-      count: count - 1
-    })
-    console.log('减法：', this.state.count)
+  updateUI() {
+    this.timer = setInterval(() => {
+      this.fetchData()
+    }, 300)
   }
 
   render() {
     return (
       <div className="App">
-        <div>
-          <button onClick={this.handleAdd}>+</button>&nbsp;&nbsp;
-          <span>{this.state.count}</span>&nbsp;&nbsp;
-          <button onClick={this.handleSubtract}>-</button>
-        </div>
-
-        <User userId={1} />
-        <User userId={2} />
+        abc
+        <div ref="content" dangerouslySetInnerHTML={{ __html: this.state.data }}></div>
       </div>
     );
-  }
-}
-
-class User extends Component {
-  componentDidMount () {
-    console.log('userId => ', this.props.userId)
   }
 }
 

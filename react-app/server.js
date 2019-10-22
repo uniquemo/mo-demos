@@ -32,21 +32,7 @@ app.use(async function (ctx, next) {
   ctx.set('Access-Control-Allow-Headers', 'X-Requested-With, User-Agent, Referer, Content-Type, Cache-Control,accesstoken')
 
   console.log(ctx.request)
-  // ctx.body = '<div>This is server response.</div>'
-
-  async function delay(time) {
-    return new Promise(function(resolve, reject) {
-      setTimeout(function(){
-        resolve();
-      }, time);
-    });
-  };
-  await delay(2000);
-
-  ctx.body = {
-    text: '<div>This is response</div>',
-    nextStart: Math.floor(Math.random() * 100 - 1)
-  }
+  ctx.body = '<div>This is server response.</div>'
 });
 
 app.listen(3001);
