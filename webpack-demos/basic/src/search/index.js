@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import logo from './images/wechat.png'
 import { a } from './tree-shaking'
+import '../../common'
 
 import './search.less'
 
