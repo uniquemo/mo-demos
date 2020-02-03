@@ -5,7 +5,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-// const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin')
+const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin')
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 
 const setMPA = () => {
   const entry = {}
@@ -58,7 +59,7 @@ module.exports = {
         test: /\.js$/,
         use: [
           'babel-loader',
-          'eslint-loader'
+          // 'eslint-loader'
         ]
       },
       {
@@ -127,20 +128,21 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new webpack.optimize.ModuleConcatenationPlugin(),
-    // new HtmlWebpackExternalsPlugin({
-    //   externals: [
-    //     {
-    //       module: 'react',
-    //       entry: 'https://unpkg.com/react@16/umd/react.production.min.js',
-    //       global: 'React'
-    //     },
-    //     {
-    //       module: 'react-dom',
-    //       entry: 'https://unpkg.com/react-dom@16/umd/react-dom.production.min.js',
-    //       global: 'ReactDOM'
-    //     }
-    //   ]
-    // })
+    new HtmlWebpackExternalsPlugin({
+      externals: [
+        {
+          module: 'react',
+          entry: 'https://unpkg.com/react@16/umd/react.production.min.js',
+          global: 'React'
+        },
+        {
+          module: 'react-dom',
+          entry: 'https://unpkg.com/react-dom@16/umd/react-dom.production.min.js',
+          global: 'ReactDOM'
+        }
+      ]
+    }),
+    new FriendlyErrorsWebpackPlugin()
   ].concat(htmlWebpackPlugins),
   devtool: 'inline-source-map',
   // optimization: {
@@ -165,5 +167,6 @@ module.exports = {
         }
       }
     }
-  }
+  },
+  stats: 'errors-only'
 }
