@@ -1,3 +1,6 @@
+const glob = require('glob')
+const path = require('path')
+const autoprefixer = require('autoprefixer')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -17,7 +20,7 @@ const setMPA = () => {
       const pageName = match && match[1]
 
       entry[pageName] = entryFile
-      htmlWebpackPlugins.push(
+      return htmlWebpackPlugins.push(
         new HtmlWebpackPlugin({
           template: path.join(__dirname, `src/${pageName}/index.html`),
           filename: `${pageName}.html`,
@@ -69,7 +72,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               plugins: () => ([
-                require('autoprefixer')({
+                autoprefixer({
                   browsers: ['last 2 version', '>1%', 'ios 7']
                 })
               ])
@@ -110,18 +113,18 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({          // 将css文件单独提取出来
+    new MiniCssExtractPlugin({ // 将css文件单独提取出来
       filename: '[name]_[contenthash:8].css'
     }),
-    new FriendlyErrorsWebpackPlugin(),  // 命令行显示优化
-    function () {                       // 错误捕获
+    new FriendlyErrorsWebpackPlugin(), // 命令行显示优化
+    function ErrorPlugin() { // 错误捕获
       this.hooks.done.tap('done', (stats) => {
         if (stats.compilation.errors && stats.compilation.errors.length && process.argv.indexOf('--watch') === -1) {
-          console.log('build error')
+          console.error('build error')  // eslint-disable-line
           process.exit(1)
         }
       })
     }
   ].concat(htmlWebpackPlugins),
-  stats: 'errors-only'                  // 命令行显示优化
+  stats: 'errors-only' // 命令行显示优化
 }
