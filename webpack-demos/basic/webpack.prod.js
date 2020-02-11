@@ -10,6 +10,7 @@ const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin')
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 // const Happypack = require('happypack')
+const TerserWebpackPlugin = require('terser-webpack-plugin')
 
 const smp = new SpeedMeasureWebpackPlugin()
 
@@ -190,7 +191,12 @@ module.exports = smp.wrap({
           minChunks: 2  // 这个模块至少被引用的次数
         }
       }
-    }
+    },
+    minimizer: [
+      new TerserWebpackPlugin({
+        parallel: 4
+      })
+    ]
   },
   stats: 'errors-only'
 })
