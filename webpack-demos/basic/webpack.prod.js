@@ -8,7 +8,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin')
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin')
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+// const Happypack = require('happypack')
 
 const smp = new SpeedMeasureWebpackPlugin()
 
@@ -62,6 +63,13 @@ module.exports = smp.wrap({
       {
         test: /\.js$/,
         use: [
+          {
+            loader: 'thread-loader',
+            options: {
+              workers: 3
+            }
+          },
+          // 'happypack/loader'
           'babel-loader',
           // 'eslint-loader'
         ]
@@ -155,7 +163,10 @@ module.exports = smp.wrap({
         }
       })
     },
-    new BundleAnalyzerPlugin()
+    // new BundleAnalyzerPlugin(),
+    // new Happypack({
+    //   loaders: ['babel-loader']
+    // })
   ].concat(htmlWebpackPlugins),
   devtool: 'inline-source-map',
   // optimization: {
