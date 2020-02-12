@@ -2,6 +2,7 @@ import 'babel-polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import logo from './images/wechat.png'
+import moto from './images/moto.jpg'
 import { a } from './tree-shaking'
 import '../../common'
 
@@ -26,13 +27,16 @@ class Search extends React.Component {
     const { Text } = this.state
 
     return (
-      <div className='search-text'>
-        {
-          Text ? <Text /> : null
-        }
-        Search Text
-        <img src={logo} onClick={this.loadComponent.bind(this)} />
-      </div>
+      <>
+        <div className='search-text'>
+          {
+            Text ? <Text /> : null
+          }
+          Search Text
+          <img src={logo} onClick={this.loadComponent.bind(this)} />
+        </div>
+        <img src={moto} />
+      </>
     )
   }
 }
