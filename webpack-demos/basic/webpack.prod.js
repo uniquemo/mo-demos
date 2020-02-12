@@ -12,8 +12,13 @@ const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin')
 const Happypack = require('happypack')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
 const HardSourceWebpackPlugin = require('hard-source-webpack-plugin')
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 
 const smp = new SpeedMeasureWebpackPlugin()
+
+const PATHS = {
+  src: path.join(__dirname, 'src')
+}
 
 const setMPA = () => {
   const entry = {}
@@ -197,7 +202,10 @@ module.exports = smp.wrap({
     new webpack.DllReferencePlugin({  // 加入插件，让webpack使用dll
       manifest: require('./build/library/library.json')
     }),
-    new HardSourceWebpackPlugin()
+    new HardSourceWebpackPlugin(),
+    // new PurgecssPlugin({
+    //   paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
+    // }),
   ].concat(htmlWebpackPlugins),
   // devtool: 'inline-source-map',
   // optimization: {
