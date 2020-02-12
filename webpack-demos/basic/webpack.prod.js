@@ -64,6 +64,7 @@ module.exports = smp.wrap({
     rules: [
       {
         test: /\.js$/,
+        include: path.resolve('src'),
         use: [
           // {
           //   loader: 'thread-loader',
@@ -204,5 +205,14 @@ module.exports = smp.wrap({
       })
     ]
   },
-  // stats: 'errors-only'
+  // stats: 'errors-only',
+  resolve: {
+    alias: {
+      'react': path.resolve(__dirname, './node_modules/react/umd/react.production.min.js'),
+      'react-dom': path.resolve(__dirname, './node_modules/react-dom/umd/react-dom.production.min.js')
+    },
+    modules: [path.resolve(__dirname, 'node_modules')],
+    extensions: ['.js'],
+    mainFields: ['main']
+  }
 })
