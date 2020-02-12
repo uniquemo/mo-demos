@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin')
+// const HtmlWebpackExternalsPlugin = require('html-webpack-externals-plugin')
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin')
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
@@ -141,20 +141,20 @@ module.exports = smp.wrap({
     }),
     new CleanWebpackPlugin(),
     new webpack.optimize.ModuleConcatenationPlugin(),
-    new HtmlWebpackExternalsPlugin({
-      externals: [
-        {
-          module: 'react',
-          entry: 'https://unpkg.com/react@16/umd/react.production.min.js',
-          global: 'React'
-        },
-        {
-          module: 'react-dom',
-          entry: 'https://unpkg.com/react-dom@16/umd/react-dom.production.min.js',
-          global: 'ReactDOM'
-        }
-      ]
-    }),
+    // new HtmlWebpackExternalsPlugin({
+    //   externals: [
+    //     {
+    //       module: 'react',
+    //       entry: 'https://unpkg.com/react@16/umd/react.production.min.js',
+    //       global: 'React'
+    //     },
+    //     {
+    //       module: 'react-dom',
+    //       entry: 'https://unpkg.com/react-dom@16/umd/react-dom.production.min.js',
+    //       global: 'ReactDOM'
+    //     }
+    //   ]
+    // }),
     new FriendlyErrorsWebpackPlugin(),
     function () {
       this.hooks.done.tap('done', (stats) => {
@@ -168,8 +168,11 @@ module.exports = smp.wrap({
     // new Happypack({
     //   loaders: ['babel-loader']
     // })
+    new webpack.DllReferencePlugin({  // 加入插件，让webpack使用dll
+      manifest: require('./build/library/library.json')
+    }),
   ].concat(htmlWebpackPlugins),
-  devtool: 'inline-source-map',
+  // devtool: 'inline-source-map',
   // optimization: {
   //   splitChunks: {
   //     cacheGroups: {
@@ -182,21 +185,21 @@ module.exports = smp.wrap({
   //   }
   // }
   optimization: {
-    splitChunks: {
-      minSize: 0,   // 这个thunk最小的大小，单位byte
-      cacheGroups: {
-        commons: {
-          name: 'commons',
-          chunks: 'all',
-          minChunks: 2  // 这个模块至少被引用的次数
-        }
-      }
-    },
+    // splitChunks: {
+    //   minSize: 0,   // 这个thunk最小的大小，单位byte
+    //   cacheGroups: {
+    //     commons: {
+    //       name: 'commons',
+    //       chunks: 'all',
+    //       minChunks: 2  // 这个模块至少被引用的次数
+    //     }
+    //   }
+    // },
     minimizer: [
       new TerserWebpackPlugin({
         parallel: 4
       })
     ]
   },
-  stats: 'errors-only'
+  // stats: 'errors-only'
 })
