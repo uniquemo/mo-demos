@@ -9,8 +9,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const SpeedMeasureWebpackPlugin = require('speed-measure-webpack-plugin')
 // const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
-// const Happypack = require('happypack')
+const Happypack = require('happypack')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
+const HardSourceWebpackPlugin = require('hard-source-webpack-plugin')
 
 const smp = new SpeedMeasureWebpackPlugin()
 
@@ -64,14 +65,14 @@ module.exports = smp.wrap({
       {
         test: /\.js$/,
         use: [
-          {
-            loader: 'thread-loader',
-            options: {
-              workers: 3
-            }
-          },
-          // 'happypack/loader'
-          'babel-loader',
+          // {
+          //   loader: 'thread-loader',
+          //   options: {
+          //     workers: 3
+          //   }
+          // },
+          // 'babel-loader',
+          'happypack/loader'
           // 'eslint-loader'
         ]
       },
@@ -165,12 +166,13 @@ module.exports = smp.wrap({
       })
     },
     // new BundleAnalyzerPlugin(),
-    // new Happypack({
-    //   loaders: ['babel-loader']
-    // })
+    new Happypack({
+      loaders: ['babel-loader?cacheDirectory=true']
+    }),
     new webpack.DllReferencePlugin({  // 加入插件，让webpack使用dll
       manifest: require('./build/library/library.json')
     }),
+    new HardSourceWebpackPlugin()
   ].concat(htmlWebpackPlugins),
   // devtool: 'inline-source-map',
   // optimization: {
@@ -197,7 +199,8 @@ module.exports = smp.wrap({
     // },
     minimizer: [
       new TerserWebpackPlugin({
-        parallel: 4
+        parallel: 4,
+        cache: true
       })
     ]
   },
