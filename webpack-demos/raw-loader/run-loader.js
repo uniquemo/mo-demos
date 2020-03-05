@@ -3,9 +3,14 @@ const path = require('path')
 const { runLoaders } = require('loader-runner')
 
 runLoaders({
-  resource: path.join(__dirname, './demo.txt'),
+  resource: path.join(__dirname, './src/demo.txt'),
   loaders: [
-    path.join(__dirname, './raw-loader.js')
+    {
+      loader: path.join(__dirname, './src/raw-loader.js'),
+      options: {
+        name: 'test'
+      }
+    }
   ],
   context: {
     minimize: true
