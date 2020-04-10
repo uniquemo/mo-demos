@@ -32,10 +32,10 @@ class Log<T> {
     return value
   }
 }
-let log1 = new Log<number>()
-log1.run(1)
-let log2 = new Log()
-log2.run({ a: 1 })
+let log11 = new Log<number>()
+log11.run(1)
+let log22 = new Log()
+log22.run({ a: 1 })
 
 
 interface Length {
