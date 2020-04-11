@@ -26,3 +26,9 @@
 声明文件依赖方式：
 - <reference types='sizzle' />
 - <reference path='JQuery.d.ts' />
+
+### 配置tsconfig文件
+#### 与文件相关的配置
+- files: []，指定需要编译的文件列表。
+- include: []，编译器需要编译的文件/目录。
+- exclude: []，编译器需要排除的文件/目录。默认排除node_modules。
