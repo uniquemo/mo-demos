@@ -1,6 +1,2 @@
-import './base/datatype'
-import './base/enum'
-
-let hello: string = 'hello typescript'
-
+let hello: string = 'Hello TypeScript'
 document.querySelectorAll('.app')[0].innerHTML = hello
