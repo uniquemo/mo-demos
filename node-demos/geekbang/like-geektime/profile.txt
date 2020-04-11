@@ -1,0 +1,1136 @@
+Statistical profiling result from isolate-0x104001000-50615-v8.log, (10179 ticks, 54 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     61    0.6%          /usr/lib/system/libsystem_platform.dylib
+     59    0.6%          /usr/lib/system/libsystem_kernel.dylib
+     13    0.1%          /usr/lib/system/libsystem_pthread.dylib
+     12    0.1%          /usr/lib/libc++abi.dylib
+      9    0.1%          /usr/lib/system/libsystem_malloc.dylib
+      2    0.0%          /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     43    0.4%    0.4%  LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     42    0.4%    0.4%  LazyCompile: *ondata _stream_readable.js:711:18
+     31    0.3%    0.3%  LazyCompile: *readableAddChunk _stream_readable.js:218:26
+     30    0.3%    0.3%  LazyCompile: *_storeHeader _http_outgoing.js:276:22
+     25    0.2%    0.2%  LazyCompile: *Readable.read _stream_readable.js:394:35
+     21    0.2%    0.2%  LazyCompile: *_writeRaw _http_outgoing.js:246:19
+     21    0.2%    0.2%  LazyCompile: *ReadStream._read internal/fs/streams.js:135:38
+     18    0.2%    0.2%  LazyCompile: *nextTick internal/process/task_queues.js:114:18
+     18    0.2%    0.2%  LazyCompile: *<anonymous> internal/fs/streams.js:168:55
+     17    0.2%    0.2%  LazyCompile: *insert internal/timers.js:305:16
+     15    0.1%    0.1%  LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+     14    0.1%    0.1%  LazyCompile: *parserOnHeadersComplete _http_common.js:71:33
+     14    0.1%    0.1%  LazyCompile: *Accepts.encoding.Accepts.encodings /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/accepts/index.js:127:40
+     13    0.1%    0.1%  LazyCompile: *emit events.js:149:44
+     12    0.1%    0.1%  LazyCompile: *connectionCorkNT _http_outgoing.js:617:26
+     11    0.1%    0.1%  LazyCompile: *resolve path.js:971:10
+     11    0.1%    0.1%  LazyCompile: *join path.js:1031:7
+     11    0.1%    0.1%  LazyCompile: *_unrefTimer net.js:344:52
+     10    0.1%    0.1%  LazyCompile: *processPromiseRejections internal/process/promises.js:144:34
+     10    0.1%    0.1%  LazyCompile: *destroy internal/streams/destroy.js:4:17
+      9    0.1%    0.1%  LazyCompile: *onwrite _stream_writable.js:445:17
+      9    0.1%    0.1%  LazyCompile: *debug internal/util/debuglog.js:45:35
+      9    0.1%    0.1%  LazyCompile: *Writable.write _stream_writable.js:275:36
+      9    0.1%    0.1%  LazyCompile: *Writable.uncork _stream_writable.js:311:37
+      9    0.1%    0.1%  LazyCompile: *<anonymous> internal/util/debuglog.js:57:18
+      8    0.1%    0.1%  LazyCompile: *set /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/response.js:457:6
+      8    0.1%    0.1%  LazyCompile: *resOnFinish _http_server.js:599:21
+      8    0.1%    0.1%  LazyCompile: *onceWrapper events.js:284:21
+      8    0.1%    0.1%  LazyCompile: *first /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/ee-first/index.js:24:15
+      8    0.1%    0.1%  LazyCompile: *emitReadable_ _stream_readable.js:554:23
+      8    0.1%    0.1%  LazyCompile: *<anonymous> internal/validators.js:88:40
+      7    0.1%    0.1%  LazyCompile: *write_ _http_outgoing.js:555:16
+      7    0.1%    0.1%  LazyCompile: *writeGeneric internal/stream_base_commons.js:133:22
+      7    0.1%    0.1%  LazyCompile: *parserOnMessageComplete _http_common.js:135:33
+      7    0.1%    0.1%  LazyCompile: *endReadableNT _stream_readable.js:1147:23
+      7    0.1%    0.1%  LazyCompile: *_addListener events.js:211:22
+      6    0.1%    0.1%  LazyCompile: *ondrain internal/http.js:30:17
+      6    0.1%    0.1%  LazyCompile: *onEofChunk _stream_readable.js:513:20
+      6    0.1%    0.1%  LazyCompile: *handleWriteReq internal/stream_base_commons.js:36:24
+      6    0.1%    0.1%  LazyCompile: *format url.js:572:39
+      6    0.1%    0.1%  LazyCompile: *end _http_outgoing.js:652:45
+      6    0.1%    0.1%  LazyCompile: *createWriteWrap internal/stream_base_commons.js:95:25
+      6    0.1%    0.1%  LazyCompile: *connectionListenerInternal _http_server.js:344:36
+      6    0.1%    0.1%  LazyCompile: *<anonymous> fs.js:153:10
+      5    0.0%    0.0%  LazyCompile: *serve /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-static/index.js:39:33
+      5    0.0%    0.0%  LazyCompile: *maybeReadMore_ _stream_readable.js:589:24
+      5    0.0%    0.0%  LazyCompile: *arrayClone events.js:472:20
+      5    0.0%    0.0%  LazyCompile: *Readable.pause _stream_readable.js:963:36
+      5    0.0%    0.0%  LazyCompile: *Readable.on _stream_readable.js:845:33
+      4    0.0%    0.0%  LazyCompile: *updateOutgoingData _http_server.js:429:28
+      4    0.0%    0.0%  LazyCompile: *removeListener events.js:317:28
+      4    0.0%    0.0%  LazyCompile: *onconnection net.js:1442:22
+      4    0.0%    0.0%  LazyCompile: *onFinish _http_outgoing.js:648:18
+      4    0.0%    0.0%  LazyCompile: *normalize path.js:1002:12
+      4    0.0%    0.0%  LazyCompile: *get path /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/request.js:144:11
+      4    0.0%    0.0%  LazyCompile: *clearBuffer _stream_writable.js:498:21
+      4    0.0%    0.0%  LazyCompile: *afterWrite _stream_writable.js:479:20
+      4    0.0%    0.0%  LazyCompile: *Readable.resume _stream_readable.js:929:37
+      3    0.0%    0.0%  LazyCompile: *writeHead _http_server.js:218:19
+      3    0.0%    0.0%  LazyCompile: *wrapper fs.js:475:19
+      3    0.0%    0.0%  LazyCompile: *set path /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/request.js:155:11
+      3    0.0%    0.0%  LazyCompile: *respond /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/application.js:214:17
+      3    0.0%    0.0%  LazyCompile: *proto.<computed> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/delegates/index.js:39:25
+      3    0.0%    0.0%  LazyCompile: *pipeOnDrainFunctionResult _stream_readable.js:774:44
+      3    0.0%    0.0%  LazyCompile: *onSocket /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/on-finished/index.js:106:20
+      3    0.0%    0.0%  LazyCompile: *normalizeString path.js:52:25
+      3    0.0%    0.0%  LazyCompile: *matchKnownFields _http_incoming.js:139:26
+      3    0.0%    0.0%  LazyCompile: *listenerCount events.js:452:23
+      3    0.0%    0.0%  LazyCompile: *getStatsFromBinding internal/fs/utils.js:313:29
+      3    0.0%    0.0%  LazyCompile: *get header /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/response.js:48:13
+      3    0.0%    0.0%  LazyCompile: *afterWriteDispatched internal/stream_base_commons.js:141:30
+      3    0.0%    0.0%  LazyCompile: *afterShutdown net.js:379:23
+      2    0.0%    0.0%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      2    0.0%    0.0%  RegExp: ^[0-2]\.
+      2    0.0%    0.0%  LazyCompile: *unenroll timers.js:62:18
+      2    0.0%    0.0%  LazyCompile: *socketOnClose _http_server.js:460:23
+      2    0.0%    0.0%  LazyCompile: *set type /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/response.js:307:11
+      2    0.0%    0.0%  LazyCompile: *set status /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/response.js:84:13
+      2    0.0%    0.0%  LazyCompile: *parse url.js:154:37
+      2    0.0%    0.0%  LazyCompile: *onunpipe _stream_readable.js:663:20
+      2    0.0%    0.0%  LazyCompile: *onend _stream_readable.js:673:17
+      2    0.0%    0.0%  LazyCompile: *once events.js:300:44
+      2    0.0%    0.0%  LazyCompile: *onParserExecute _http_server.js:509:25
+      2    0.0%    0.0%  LazyCompile: *hidden internal/errors.js:233:25
+      2    0.0%    0.0%  LazyCompile: *get net.js:1582:6
+      2    0.0%    0.0%  LazyCompile: *get method /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/request.js:122:13
+      2    0.0%    0.0%  LazyCompile: *get internal/bootstrap/pre_execution.js:282:8
+      2    0.0%    0.0%  LazyCompile: *get _stream_duplex.js:121:6
+      2    0.0%    0.0%  LazyCompile: *flow _stream_readable.js:974:14
+      2    0.0%    0.0%  LazyCompile: *doWrite _stream_writable.js:407:17
+      2    0.0%    0.0%  LazyCompile: *detachSocket _http_server.js:197:62
+      2    0.0%    0.0%  LazyCompile: *destroyHooksExist internal/async_hooks.js:316:27
+      2    0.0%    0.0%  LazyCompile: *createUnsafeBuffer buffer.js:112:28
+      2    0.0%    0.0%  LazyCompile: *copyObject internal/fs/utils.js:123:20
+      2    0.0%    0.0%  LazyCompile: *chunkInvalid _stream_readable.js:309:22
+      2    0.0%    0.0%  LazyCompile: *callFinal _stream_writable.js:614:19
+      2    0.0%    0.0%  LazyCompile: *addListener events.js:273:58
+      2    0.0%    0.0%  LazyCompile: *acceptsEncodings /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/request.js:570:19
+      2    0.0%    0.0%  LazyCompile: *_onceWrap events.js:292:19
+      2    0.0%    0.0%  LazyCompile: *Socket._write net.js:707:35
+      2    0.0%    0.0%  LazyCompile: *ServerResponse _http_server.js:139:24
+      2    0.0%    0.0%  LazyCompile: *ReadableState _stream_readable.js:72:23
+      2    0.0%    0.0%  LazyCompile: *Readable.removeListener _stream_readable.js:875:45
+      2    0.0%    0.0%  LazyCompile: *Readable.pipe _stream_readable.js:634:35
+      2    0.0%    0.0%  LazyCompile: *<anonymous> _http_outgoing.js:437:44
+      1    0.0%    0.0%  RegExp: ^([a-zA-Z]:|[\\\/]{2}[^\\\/]+[\\\/]+[^\\\/]+)?([\\\/])?([\s\S]*?)$
+      1    0.0%    0.0%  RegExp: (?:^|[\\/])\.\.(?:[\\/]|$)
+      1    0.0%    0.0%  LazyCompile: *toPathIfFileURL internal/url.js:1385:25
+      1    0.0%    0.0%  LazyCompile: *socketListenerWrap _http_server.js:762:37
+      1    0.0%    0.0%  LazyCompile: *shift internal/fixed_queue.js:104:8
+      1    0.0%    0.0%  LazyCompile: *setUnrefTimeout internal/timers.js:345:25
+      1    0.0%    0.0%  LazyCompile: *setStreamTimeout internal/stream_base_commons.js:202:26
+      1    0.0%    0.0%  LazyCompile: *set body /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/response.js:135:11
+      1    0.0%    0.0%  LazyCompile: *retry /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:340:16
+      1    0.0%    0.0%  LazyCompile: *resume_ _stream_readable.js:950:17
+      1    0.0%    0.0%  LazyCompile: *remove internal/linkedlist.js:15:16
+      1    0.0%    0.0%  LazyCompile: *prependListener events.js:280:29
+      1    0.0%    0.0%  LazyCompile: *prefinish _stream_writable.js:625:19
+      1    0.0%    0.0%  LazyCompile: *open fs.js:412:14
+      1    0.0%    0.0%  LazyCompile: *onSocketResume _http_server.js:726:24
+      1    0.0%    0.0%  LazyCompile: *onCorkedFinish _stream_writable.js:672:24
+      1    0.0%    0.0%  LazyCompile: *nop _stream_writable.js:54:13
+      1    0.0%    0.0%  LazyCompile: *isUint32 internal/validators.js:21:18
+      1    0.0%    0.0%  LazyCompile: *initAsyncResource internal/timers.js:142:27
+      1    0.0%    0.0%  LazyCompile: *handleRequest /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/application.js:160:16
+      1    0.0%    0.0%  LazyCompile: *getHighWaterMark internal/streams/state.js:12:26
+      1    0.0%    0.0%  LazyCompile: *getDefaultTriggerAsyncId internal/async_hooks.js:278:34
+      1    0.0%    0.0%  LazyCompile: *get writable /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/response.js:521:15
+      1    0.0%    0.0%  LazyCompile: *get status /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/response.js:73:13
+      1    0.0%    0.0%  LazyCompile: *get /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/response.js:415:6
+      1    0.0%    0.0%  LazyCompile: *emitCloseNT internal/streams/destroy.js:63:21
+      1    0.0%    0.0%  LazyCompile: *dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      1    0.0%    0.0%  LazyCompile: *destroyReadStream /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/destroy/index.js:54:27
+      1    0.0%    0.0%  LazyCompile: *callback /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/polyfills.js:290:25
+      1    0.0%    0.0%  LazyCompile: *attachListener /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/on-finished/index.js:140:24
+      1    0.0%    0.0%  LazyCompile: *Socket._final net.js:354:35
+      1    0.0%    0.0%  LazyCompile: *Socket net.js:236:16
+      1    0.0%    0.0%  LazyCompile: *ReadStream /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:260:23
+      1    0.0%    0.0%  LazyCompile: *OutgoingMessage _http_outgoing.js:70:25
+      1    0.0%    0.0%  LazyCompile: *Accepts /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/accepts/index.js:32:18
+      1    0.0%    0.0%  LazyCompile: *<anonymous> net.js:584:24
+      1    0.0%    0.0%  LazyCompile: *<anonymous> internal/fs/utils.js:196:35
+      1    0.0%    0.0%  LazyCompile: *<anonymous> fs.js:164:10
+      1    0.0%    0.0%  LazyCompile: *<anonymous> buffer.js:245:36
+      1    0.0%    0.0%  LazyCompile: *<anonymous> _stream_writable.js:615:17
+      1    0.0%    0.0%  LazyCompile: *<anonymous> _http_outgoing.js:443:45
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:50:45
+
+ [C++]:
+   ticks  total  nonlib   name
+   3500   34.4%   34.9%  T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+   1800   17.7%   18.0%  T _task_threads
+    514    5.0%    5.1%  T _mach_msg
+    425    4.2%    4.2%  T _thread_info
+    379    3.7%    3.8%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_11WriteBufferERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+    349    3.4%    3.5%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_6WritevERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+    347    3.4%    3.5%  t _bcopy
+    256    2.5%    2.6%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    179    1.8%    1.8%  T _chmod
+    159    1.6%    1.6%  T _thread_policy_get
+     97    1.0%    1.0%  T _task_info
+     78    0.8%    0.8%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+     76    0.7%    0.8%  T _vm_region_recurse_64
+     72    0.7%    0.7%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_11WriteStringILNS_8encodingE4EEEiRKN2v820FunctionCallbackInfoINS4_5ValueEEEEEEEvS9_
+     45    0.4%    0.4%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     44    0.4%    0.4%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     39    0.4%    0.4%  T __kernelrpc_mach_vm_allocate_trap
+     36    0.4%    0.4%  t _tiny_malloc_should_clear
+     36    0.4%    0.4%  T ___fcntl_nocancel
+     34    0.3%    0.3%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     26    0.3%    0.3%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     23    0.2%    0.2%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+     23    0.2%    0.2%  T _proc_name
+     20    0.2%    0.2%  t _tiny_malloc_from_free_list
+     19    0.2%    0.2%  T __ZNK2v85Value10IsFunctionEv
+     18    0.2%    0.2%  T __kernelrpc_mach_vm_map_trap
+     18    0.2%    0.2%  T __ZN4node7TTYWrap3NewERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+     15    0.1%    0.1%  t __malloc_initialize
+     14    0.1%    0.1%  T ___pthread_init
+     13    0.1%    0.1%  T node::InternalCallbackScope::Close()
+     12    0.1%    0.1%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+     12    0.1%    0.1%  T __kernelrpc_mach_port_get_refs
+     11    0.1%    0.1%  T _thread_self_trap
+     10    0.1%    0.1%  t _tiny_size
+     10    0.1%    0.1%  t __ZNK2v88internal10FixedArray8GetValueINS0_8JSObjectEEENS0_11MaybeHandleIT_EEPNS0_7IsolateEi
+     10    0.1%    0.1%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     10    0.1%    0.1%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+     10    0.1%    0.1%  T __ZN2v87Context4ExitEv
+      9    0.1%    0.1%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.1%    0.1%  T node::fs::FSReqCallback::Resolve(v8::Local<v8::Value>)
+      9    0.1%    0.1%  T __kernelrpc_mach_vm_purgable_control_trap
+      9    0.1%    0.1%  T __ZN2v811HandleScope10InitializeEPNS_7IsolateE
+      8    0.1%    0.1%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.1%    0.1%  t _tiny_free_no_lock
+      8    0.1%    0.1%  t __ZZN4node15LibuvStreamWrap10InitializeEN2v85LocalINS1_6ObjectEEENS2_INS1_5ValueEEENS2_INS1_7ContextEEEPvEN3$_08__invokeERKNS1_20FunctionCallbackInfoIS5_EE
+      8    0.1%    0.1%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb0EEC1EPNS_8internal7IsolateENS_5LocalINS_7ContextEEE
+      8    0.1%    0.1%  T __ZN2v87Context5EnterEv
+      8    0.1%    0.1%  T __ZN2v87Context29GetNumberOfEmbedderDataFieldsEv
+      7    0.1%    0.1%  t node::(anonymous namespace)::Parser::Execute(char const*, unsigned long)
+      7    0.1%    0.1%  t _small_malloc_should_clear
+      7    0.1%    0.1%  t _free_small
+      7    0.1%    0.1%  t ___vfprintf
+      7    0.1%    0.1%  t __ZN2v88internal12_GLOBAL__N_117InstantiateObjectEPNS0_7IsolateENS0_6HandleINS0_18ObjectTemplateInfoEEENS4_INS0_10JSReceiverEEEbb
+      7    0.1%    0.1%  T node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      6    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.1%    0.1%  t node::fs::FSReqCallback::~FSReqCallback()
+      6    0.1%    0.1%  t node::Environment::AddCleanupHook(void (*)(void*), void*)
+      6    0.1%    0.1%  t node::AsyncHooks::pop_async_id(double)
+      6    0.1%    0.1%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb1EEC1EPNS_8internal7IsolateENS_5LocalINS_7ContextEEE
+      6    0.1%    0.1%  T node::NodeArrayBufferAllocator::Allocate(unsigned long)
+      6    0.1%    0.1%  T _pthread_get_stacksize_np
+      6    0.1%    0.1%  T __kernelrpc_mach_port_request_notification
+      6    0.1%    0.1%  T __ZN2v88internal9Accessors17ArrayLengthSetterENS_5LocalINS_4NameEEENS2_INS_5ValueEEERKNS_20PropertyCallbackInfoINS_7BooleanEEE
+      5    0.0%    0.0%  t std::__1::__hash_table<v8::TracingController::TraceStateObserver*, std::__1::hash<v8::TracingController::TraceStateObserver*>, std::__1::equal_to<v8::TracingController::TraceStateObserver*>, std::__1::allocator<v8::TracingController::TraceStateObserver*> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<v8::TracingController::TraceStateObserver*, void*>*>)
+      5    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_header_value(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      5    0.0%    0.0%  t _szone_size
+      5    0.0%    0.0%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb1EED1Ev
+      5    0.0%    0.0%  T node::contextify::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.0%    0.0%  T __ZNK2v85Value17IsArrayBufferViewEv
+      5    0.0%    0.0%  T __ZN2v820EscapableHandleScope6EscapeEPm
+      4    0.0%    0.0%  t node::BaseObject::~BaseObject()
+      4    0.0%    0.0%  t __ZNK2v84base19TemplateHashMapImplImjNS0_18KeyEqualityMatcherIlEENS0_23DefaultAllocationPolicyEE5ProbeERKmj
+      4    0.0%    0.0%  t __ZN4node12_GLOBAL__N_111GetLibuvNowERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      4    0.0%    0.0%  t __ZN4node10task_queueL13RunMicrotasksERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      4    0.0%    0.0%  t __ZN2v88internal6String7FlattenEPNS0_7IsolateENS0_6HandleIS1_EENS0_13PretenureFlagE
+      4    0.0%    0.0%  T node::fs::FSReqCallback::SetReturnValue(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, node::InternalCallbackScope::ResourceExpectation)
+      4    0.0%    0.0%  T node::HandleWrap::OnClose(uv_handle_s*)
+      4    0.0%    0.0%  T _free
+      4    0.0%    0.0%  T __kernelrpc_mach_vm_deallocate_trap
+      4    0.0%    0.0%  T __ZThn80_N4node15LibuvStreamWrap7IsAliveEv
+      4    0.0%    0.0%  T __ZNK2v85Value8IsObjectEv
+      4    0.0%    0.0%  T __ZN4node7TCPWrap11InstantiateEPNS_11EnvironmentEPNS_9AsyncWrapENS0_10SocketTypeE
+      4    0.0%    0.0%  T __ZN2v88internal25FunctionCallbackArgumentsC1EPNS0_7IsolateENS0_6ObjectENS0_10HeapObjectES4_S5_Pmi
+      3    0.0%    0.0%  t node::StreamBase::Write(uv_buf_t*, unsigned long, uv_stream_s*, v8::Local<v8::Object>)
+      3    0.0%    0.0%  t node::Buffer::(anonymous namespace)::CreateFromString(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  t node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  t _nano_common_configure
+      3    0.0%    0.0%  t _mvm_allocate_pages_securely
+      3    0.0%    0.0%  t _malloc_print_configure
+      3    0.0%    0.0%  t __ZZN4node15LibuvStreamWrap9ReadStartEvEN3$_28__invokeEP11uv_stream_slPK8uv_buf_t
+      3    0.0%    0.0%  T node::Emit(node::Environment*, double, node::AsyncHooks::Fields, v8::Local<v8::Function>)
+      3    0.0%    0.0%  T node::ConnectionWrap<node::TCPWrap, uv_tcp_s>::OnConnection(uv_stream_s*, int)
+      3    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventBefore()
+      3    0.0%    0.0%  T _task_self_trap
+      3    0.0%    0.0%  T _getipv4sourcefilter
+      3    0.0%    0.0%  T __kernelrpc_mach_vm_map
+      3    0.0%    0.0%  T __ZN4node30ReportWritesToJSStreamListener24OnStreamAfterReqFinishedEPNS_9StreamReqEi
+      3    0.0%    0.0%  T __ZN4node15LibuvStreamWrap10DoTryWriteEPP8uv_buf_tPm
+      3    0.0%    0.0%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_8ShutdownERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+      3    0.0%    0.0%  T __ZN4node10StreamBase11WriteStringILNS_8encodingE4EEEiRKN2v820FunctionCallbackInfoINS3_5ValueEEE
+      3    0.0%    0.0%  T __ZN2v88internal9Accessors23FunctionPrototypeGetterENS_5LocalINS_4NameEEERKNS_20PropertyCallbackInfoINS_5ValueEEE
+      2    0.0%    0.0%  t void node::fs::FillStatsArray<double, v8::Float64Array>(node::AliasedBufferBase<double, v8::Float64Array, std::__1::enable_if<std::is_scalar<double>::value, void>::type>*, uv_stat_t const*, unsigned long)
+      2    0.0%    0.0%  t unsigned long std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::__erase_unique<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      2    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<v8::TracingController::TraceStateObserver*, void*>*> std::__1::__hash_table<v8::TracingController::TraceStateObserver*, std::__1::hash<v8::TracingController::TraceStateObserver*>, std::__1::equal_to<v8::TracingController::TraceStateObserver*>, std::__1::allocator<v8::TracingController::TraceStateObserver*> >::find<v8::TracingController::TraceStateObserver*>(v8::TracingController::TraceStateObserver* const&)
+      2    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_headers_complete())>::Raw(llhttp__internal_s*)
+      2    0.0%    0.0%  t _free_tiny
+      2    0.0%    0.0%  t __ZNK2v88internal12RootIndexMap6LookupENS0_10HeapObjectEPNS0_9RootIndexE
+      2    0.0%    0.0%  T node::fs::FSReqAfterScope::~FSReqAfterScope()
+      2    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::Environment::GetNow()
+      2    0.0%    0.0%  T node::Buffer::Length(v8::Local<v8::Object>)
+      2    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventDestroy()
+      2    0.0%    0.0%  T node::AsyncWrap::EmitDestroy(node::Environment*, double)
+      2    0.0%    0.0%  T node::AsyncWrap::AsyncReset(v8::Local<v8::Object>, double, bool)
+      2    0.0%    0.0%  T _pthread_getname_np
+      2    0.0%    0.0%  T _pthread_get_stackaddr_np
+      2    0.0%    0.0%  T ___fread
+      2    0.0%    0.0%  T __ZNK2v85Value12IsUint8ArrayEv
+      2    0.0%    0.0%  T __ZN4node15LibuvStreamWrap8OnUvReadElPK8uv_buf_t
+      2    0.0%    0.0%  T __ZN4node11StringBytes11StorageSizeEPN2v87IsolateENS1_5LocalINS1_5ValueEEENS_8encodingE
+      2    0.0%    0.0%  T __ZN4node10StreamBase6WritevERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      2    0.0%    0.0%  T __ZN4node10StreamBase11WriteBufferERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      2    0.0%    0.0%  T __ZN4node10BaseObject16InternalFieldSetILi2EXadL_ZNK2v85Value10IsFunctionEvEEEEvNS2_5LocalINS2_6StringEEENS4_IS3_EERKNS2_20PropertyCallbackInfoIvEE
+      2    0.0%    0.0%  T __ZN2v88internal10ApiNatives19InstantiateFunctionENS0_6HandleINS0_20FunctionTemplateInfoEEENS0_11MaybeHandleINS0_4NameEEE
+      2    0.0%    0.0%  T __ZN2v820EscapableHandleScopeC2EPNS_7IsolateE
+      2    0.0%    0.0%  T __ZN2v811HandleScopeD1Ev
+      1    0.0%    0.0%  t v8::internal::compiler::SimplifiedOperatorGlobalCache::SpeculativeNumberModulusOperator<(v8::internal::compiler::NumberOperationHint)1>::~SpeculativeNumberModulusOperator()
+      1    0.0%    0.0%  t v8::internal::compiler::Operator1<unsigned long, v8::internal::compiler::OpEqualTo<unsigned long>, v8::internal::compiler::OpHash<unsigned long> >::~Operator1()
+      1    0.0%    0.0%  t v8::internal::compiler::MachineOperatorGlobalCache::UnsafePointerAddOperator::~UnsafePointerAddOperator()
+      1    0.0%    0.0%  t v8::internal::compiler::MachineOperatorGlobalCache::TruncateFloat64ToWord32Operator::~TruncateFloat64ToWord32Operator()
+      1    0.0%    0.0%  t v8::internal::UnbufferedCharacterStream<v8::internal::ExternalStringStream>::can_be_cloned() const
+      1    0.0%    0.0%  t std::__1::locale::__imp::__imp(unsigned long)
+      1    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<node::MemoryRetainer const*, node::MemoryRetainerNode*>, std::__1::__unordered_map_hasher<node::MemoryRetainer const*, std::__1::__hash_value_type<node::MemoryRetainer const*, node::MemoryRetainerNode*>, std::__1::hash<node::MemoryRetainer const*>, true>, std::__1::__unordered_map_equal<node::MemoryRetainer const*, std::__1::__hash_value_type<node::MemoryRetainer const*, node::MemoryRetainerNode*>, std::__1::equal_to<node::MemoryRetainer const*>, true>, std::__1::allocator<std::__1::__hash_value_type<node::MemoryRetainer const*, node::MemoryRetainerNode*> > >::__rehash(unsigned long)
+      1    0.0%    0.0%  t std::__1::__function::__func<node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)::'lambda'(), std::__1::allocator<node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)::'lambda'()>, void ()>::destroy()
+      1    0.0%    0.0%  t std::__1::__function::__func<node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)::'lambda'(), std::__1::allocator<node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)::'lambda'()>, void ()>::__clone(std::__1::__function::__base<void ()>*) const
+      1    0.0%    0.0%  t offsetTOCLookupFn(UDataMemory const*, char const*, int*, UErrorCode*)
+      1    0.0%    0.0%  t non-virtual thunk to node::SimpleShutdownWrap<node::ReqWrap<uv_fs_s> >::MemoryInfo(node::MemoryTracker*) const
+      1    0.0%    0.0%  t non-virtual thunk to node::(anonymous namespace)::Parser::OnStreamAlloc(unsigned long)
+      1    0.0%    0.0%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::TraceEventScope::~TraceEventScope()
+      1    0.0%    0.0%  t node::(anonymous namespace)::StringPtr::Update(char const*, unsigned long)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_url(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_header_field(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_message_complete())>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Free(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t defaultContains(BinaryProperty const&, int, UProperty)
+      1    0.0%    0.0%  t _szone_calloc
+      1    0.0%    0.0%  t _small_malloc_from_free_list
+      1    0.0%    0.0%  t _map_images_nolock
+      1    0.0%    0.0%  t _malloc_zone_register_while_locked
+      1    0.0%    0.0%  t _mach_init_doit
+      1    0.0%    0.0%  t __read_images
+      1    0.0%    0.0%  t __pthread_mutex_lock_init_slow
+      1    0.0%    0.0%  t __pthread_mutex_check_init_slow
+      1    0.0%    0.0%  t __ZNSt3__15dequeINS_10unique_ptrIN2v84TaskENS_14default_deleteIS3_EEEENS_9allocatorIS6_EEE9push_backEOS6_
+      1    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_124ProbeInstantiationsCacheEPNS0_7IsolateEiNS1_11CachingModeE
+      1    0.0%    0.0%  t __ZN2v88internal12_GLOBAL__N_111InvokeScopeD1Ev
+      1    0.0%    0.0%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb0EED1Ev
+      1    0.0%    0.0%  T std::__1::locale::__global()
+      1    0.0%    0.0%  T std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*, unsigned long)
+      1    0.0%    0.0%  T std::__1::__next_prime(unsigned long)
+      1    0.0%    0.0%  T node::fs::FSReqCallback::ResolveStat(uv_stat_t const*)
+      1    0.0%    0.0%  T node::fs::FSReqAfterScope::FSReqAfterScope(node::fs::FSReqBase*, uv_fs_s*)
+      1    0.0%    0.0%  T node::fs::AfterStat(uv_fs_s*)
+      1    0.0%    0.0%  T node::fs::AfterInteger(uv_fs_s*)
+      1    0.0%    0.0%  T node::contextify::ContextifyContext::MakeContext(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      1    0.0%    0.0%  T node::MakeLibuvRequestCallback<uv_fs_s, void (*)(uv_fs_s*)>::Wrapper(uv_fs_s*)
+      1    0.0%    0.0%  T node::InternalMakeCallback(node::Environment*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*, node::async_context)
+      1    0.0%    0.0%  T node::HandleWrap::HandleWrap(node::Environment*, v8::Local<v8::Object>, uv_handle_s*, node::AsyncWrap::ProviderType)
+      1    0.0%    0.0%  T node::ConnectionWrap<node::TCPWrap, uv_tcp_s>::ConnectionWrap(node::Environment*, v8::Local<v8::Object>, node::AsyncWrap::ProviderType)
+      1    0.0%    0.0%  T node::Buffer::HasInstance(v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::Buffer::Data(v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::AsyncWrap::~AsyncWrap()
+      1    0.0%    0.0%  T node::AsyncWrap::AsyncWrap(node::Environment*, v8::Local<v8::Object>, node::AsyncWrap::ProviderType, double, bool)
+      1    0.0%    0.0%  T _swprintf_l
+      1    0.0%    0.0%  T _pthread_set_qos_class_self_np
+      1    0.0%    0.0%  T _mach_reply_port
+      1    0.0%    0.0%  T _fscanf_l
+      1    0.0%    0.0%  T _fscanf
+      1    0.0%    0.0%  T __kernelrpc_mach_port_allocate_trap
+      1    0.0%    0.0%  T ___libkernel_init
+      1    0.0%    0.0%  T ___gxx_personality_v0
+      1    0.0%    0.0%  T __ZThn80_N4node15LibuvStreamWrap9ReadStartEv
+      1    0.0%    0.0%  T __ZThn80_N4node15LibuvStreamWrap12GetAsyncWrapEv
+      1    0.0%    0.0%  T __ZNK2v85Value8IsNumberEv
+      1    0.0%    0.0%  T __ZN4node7TCPWrap3NewERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node28DTRACE_NET_SERVER_CONNECTIONERKN2v820FunctionCallbackInfoINS0_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node27DTRACE_HTTP_SERVER_RESPONSEERKN2v820FunctionCallbackInfoINS0_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node24MakeLibuvRequestCallbackI13uv_shutdown_sPFvPS1_iEE7WrapperES2_i
+      1    0.0%    0.0%  T __ZN4node15LibuvStreamWrap9OnUvAllocEmP8uv_buf_t
+      1    0.0%    0.0%  T __ZN4node15LibuvStreamWrap15AfterUvShutdownEP13uv_shutdown_si
+      1    0.0%    0.0%  T __ZN4node10StreamBase9GetObjectEv
+      1    0.0%    0.0%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_11ReadStartJSERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+      1    0.0%    0.0%  T __ZN4node10StreamBase15GetBytesWrittenERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  T __ZN2v88internal10ApiNatives17InstantiateObjectEPNS0_7IsolateENS0_6HandleINS0_18ObjectTemplateInfoEEENS4_INS0_10JSReceiverEEE
+      1    0.0%    0.0%  T __ZN2v88TryCatchC1EPNS_7IsolateE
+      1    0.0%    0.0%  T __ZN2v88TryCatch17SetCaptureMessageEb
+      1    0.0%    0.0%  T __ZN2v88TryCatch10SetVerboseEb
+      1    0.0%    0.0%  T __ZN2v87Isolate17GetCurrentContextEv
+      1    0.0%    0.0%  T __ZN2v811HandleScopeD2Ev
+      1    0.0%    0.0%  T __ZN2v811HandleScopeC1EPNS_7IsolateE
+
+ [Summary]:
+   ticks  total  nonlib   name
+    775    7.6%    7.7%  JavaScript
+   9194   90.3%   91.7%  C++
+    428    4.2%    4.3%  GC
+    156    1.5%          Shared libraries
+     54    0.5%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   4341   62.0%   42.6%  T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+   1798   25.7%   17.7%  T _task_threads
+    514    7.3%    5.0%  T _mach_msg
+    173    2.5%    1.7%  T _chmod
+     36    0.5%    0.4%  T ___fcntl_nocancel
+     10    0.1%    0.1%  T _vm_region_recurse_64
+      9    0.1%    0.1%  T _thread_self_trap
+      7    0.1%    0.1%  T __ZNK2v85Value10IsFunctionEv
+      6    0.1%    0.1%  T _pthread_get_stacksize_np
+      5    0.1%    0.0%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.1%    0.0%  T __kernelrpc_mach_vm_purgable_control_trap
+      5    0.1%    0.0%  T __ZNK2v85Value17IsArrayBufferViewEv
+      5    0.1%    0.0%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_11WriteStringILNS_8encodingE4EEEiRKN2v820FunctionCallbackInfoINS4_5ValueEEEEEEEvS9_
+      4    0.1%    0.0%  t _tiny_malloc_should_clear
+      4    0.1%    0.0%  t __ZN4node10task_queueL13RunMicrotasksERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      4    0.1%    0.0%  T node::fs::FSReqCallback::SetReturnValue(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.1%    0.0%  T __ZThn80_N4node15LibuvStreamWrap7IsAliveEv
+      4    0.1%    0.0%  T __ZNK2v85Value8IsObjectEv
+      4    0.1%    0.0%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_11WriteBufferERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+      3    0.0%    0.0%  t node::StreamBase::Write(uv_buf_t*, unsigned long, uv_stream_s*, v8::Local<v8::Object>)
+      3    0.0%    0.0%  T __ZN4node15LibuvStreamWrap10DoTryWriteEPP8uv_buf_tPm
+      3    0.0%    0.0%  T __ZN4node10StreamBase11WriteStringILNS_8encodingE4EEEiRKN2v820FunctionCallbackInfoINS3_5ValueEEE
+      2    0.0%    0.0%  t node::Environment::AddCleanupHook(void (*)(void*), void*)
+      2    0.0%    0.0%  t node::(anonymous namespace)::Parser::Initialize(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t _tiny_malloc_from_free_list
+      2    0.0%    0.0%  t __malloc_initialize
+      2    0.0%    0.0%  t __ZN4node12_GLOBAL__N_111GetLibuvNowERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      2    0.0%    0.0%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::Environment::GetNow()
+      2    0.0%    0.0%  T node::Buffer::Length(v8::Local<v8::Object>)
+      2    0.0%    0.0%  T node::AsyncWrap::AsyncReset(v8::Local<v8::Object>, double, bool)
+      2    0.0%    0.0%  T _task_self_trap
+      2    0.0%    0.0%  T _pthread_getname_np
+      2    0.0%    0.0%  T _pthread_get_stackaddr_np
+      2    0.0%    0.0%  T __kernelrpc_mach_port_request_notification
+      2    0.0%    0.0%  T __ZNK2v85Value12IsUint8ArrayEv
+      2    0.0%    0.0%  T __ZN4node11StringBytes11StorageSizeEPN2v87IsolateENS1_5LocalINS1_5ValueEEENS_8encodingE
+      2    0.0%    0.0%  T __ZN4node10StreamBase6WritevERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      2    0.0%    0.0%  T __ZN4node10StreamBase11WriteBufferERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Free(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t _szone_size
+      1    0.0%    0.0%  t _nano_common_configure
+      1    0.0%    0.0%  t _malloc_print_configure
+      1    0.0%    0.0%  t __pthread_mutex_lock_init_slow
+      1    0.0%    0.0%  t __pthread_mutex_check_init_slow
+      1    0.0%    0.0%  t __ZN2v812_GLOBAL__N_114CallDepthScopeILb1EEC1EPNS_8internal7IsolateENS_5LocalINS_7ContextEEE
+      1    0.0%    0.0%  T node::ParseEncoding(v8::Isolate*, v8::Local<v8::Value>, node::encoding)
+      1    0.0%    0.0%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::Buffer::HasInstance(v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::Buffer::Data(v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::AsyncWrap::AsyncWrap(node::Environment*, v8::Local<v8::Object>, node::AsyncWrap::ProviderType, double, bool)
+      1    0.0%    0.0%  T _mach_reply_port
+      1    0.0%    0.0%  T ___pthread_init
+      1    0.0%    0.0%  T __ZThn80_N4node15LibuvStreamWrap9ReadStartEv
+      1    0.0%    0.0%  T __ZThn80_N4node15LibuvStreamWrap12GetAsyncWrapEv
+      1    0.0%    0.0%  T __ZNK2v85Value8IsNumberEv
+      1    0.0%    0.0%  T __ZN4node28DTRACE_NET_SERVER_CONNECTIONERKN2v820FunctionCallbackInfoINS0_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node27DTRACE_HTTP_SERVER_RESPONSEERKN2v820FunctionCallbackInfoINS0_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_8ShutdownERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+      1    0.0%    0.0%  T __ZN4node10StreamBase15GetBytesWrittenERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  T __ZN2v811HandleScopeD1Ev
+      1    0.0%    0.0%  T __ZN2v811HandleScopeC1EPNS_7IsolateE
+      1    0.0%    0.0%  T __ZN2v811HandleScope10InitializeEPNS_7IsolateE
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   3500   34.4%  T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+    645   18.4%    T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+     67   10.4%      T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+     25   37.3%        LazyCompile: *createUnsafeBuffer buffer.js:112:28
+     25  100.0%          LazyCompile: *ReadStream._read internal/fs/streams.js:135:38
+     22   88.0%            LazyCompile: *Readable.read _stream_readable.js:394:35
+      2    8.0%            LazyCompile: ~<anonymous> internal/fs/streams.js:137:38
+      1    4.0%            LazyCompile: *onceWrapper events.js:284:21
+      9   13.4%        LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      5   55.6%          LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/entry.js:15:9
+      3   60.0%            LazyCompile: *handleRequest /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/application.js:160:16
+      2   40.0%            LazyCompile: *<anonymous> internal/streams/destroy.js:37:30
+      2   22.2%          LazyCompile: ~dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      2  100.0%            LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/entry.js:15:9
+      2   22.2%          LazyCompile: *dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      2  100.0%            LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/entry.js:15:9
+      8   11.9%        LazyCompile: *get header /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/response.js:48:13
+      8  100.0%          LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+      8  100.0%            T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+      3    4.5%        LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+      2   66.7%          LazyCompile: *serve /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-static/index.js:39:33
+      1   50.0%            LazyCompile: *dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      1   50.0%            LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      1   33.3%          LazyCompile: ~serve /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-static/index.js:39:33
+      1  100.0%            LazyCompile: ~dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      3    4.5%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      2    3.0%        LazyCompile: *Accepts.encoding.Accepts.encodings /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/accepts/index.js:127:40
+      2  100.0%          LazyCompile: *acceptsEncodings /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/request.js:570:19
+      2  100.0%            LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+      2    3.0%        LazyCompile: *<anonymous> internal/fs/streams.js:168:55
+      2  100.0%          LazyCompile: *wrapper fs.js:475:19
+      1    1.5%        T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+      1  100.0%          LazyCompile: ~prepareStackTrace internal/errors.js:26:27
+      1  100.0%            T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+      1    1.5%        LazyCompile: ~toIdentifier /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/toidentifier/index.js:22:23
+      1  100.0%          LazyCompile: ~forEachCode /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/http-errors/index.js:243:38
+      1  100.0%            T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+      1    1.5%        LazyCompile: ~stat internal/modules/cjs/loader.js:80:14
+      1  100.0%          LazyCompile: ~tryFile internal/modules/cjs/loader.js:259:17
+      1  100.0%            LazyCompile: ~tryExtensions internal/modules/cjs/loader.js:274:23
+      1    1.5%        LazyCompile: ~populateStatusesMap /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/statuses/index.js:60:30
+      1  100.0%          Eval: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/statuses/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile internal/modules/cjs/loader.js:697:37
+      1    1.5%        LazyCompile: ~module.exports /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/slash/index.js:2:27
+      1  100.0%          LazyCompile: ~normaliseOptions /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/babel-core/lib/transformation/file/options/index.js:20:26
+      1  100.0%            LazyCompile: ~mergeOptions /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/babel-core/lib/transformation/file/options/option-manager.js:190:63
+      1    1.5%        LazyCompile: ~module.exports /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/protocol-buffers-schema/tokenize.js:1:27
+      1  100.0%          LazyCompile: ~parse /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/protocol-buffers-schema/parse.js:568:22
+      1  100.0%            LazyCompile: ~module.exports /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/protocol-buffers/index.js:14:27
+      1    1.5%        LazyCompile: ~match /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:83:18
+      1  100.0%          LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      1  100.0%            LazyCompile: ~dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      1    1.5%        LazyCompile: ~isHidden /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:149:19
+      1  100.0%          LazyCompile: ~send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+      1  100.0%            LazyCompile: ~serve /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-static/index.js:39:33
+      1    1.5%        LazyCompile: ~allocNewPool internal/fs/streams.js:33:22
+      1  100.0%          LazyCompile: ~ReadStream._read internal/fs/streams.js:135:38
+      1  100.0%            LazyCompile: *Readable.read _stream_readable.js:394:35
+      1    1.5%        LazyCompile: ~<anonymous> internal/util/inspect.js:97:45
+      1  100.0%          T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+      1  100.0%            Eval: ~<anonymous> internal/util/inspect.js:1:1
+      1    1.5%        LazyCompile: *resume_ _stream_readable.js:950:17
+      1  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1    1.5%        LazyCompile: *get /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/response.js:415:6
+      1  100.0%          LazyCompile: ~get type /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/response.js:379:11
+      1  100.0%            LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+      1    1.5%        LazyCompile: *Readable.read _stream_readable.js:394:35
+      1  100.0%          LazyCompile: *maybeReadMore_ _stream_readable.js:589:24
+      1  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1    1.5%        LazyCompile: *ReadStream._read internal/fs/streams.js:135:38
+      1  100.0%          LazyCompile: *Readable.read _stream_readable.js:394:35
+      1  100.0%            LazyCompile: ~maybeReadMore_ _stream_readable.js:589:24
+     34    5.3%      LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+     25   73.5%        T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+      9   26.5%        LazyCompile: *serve /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-static/index.js:39:33
+      5   55.6%          LazyCompile: *dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      5  100.0%            LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      4   44.4%          LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      4  100.0%            LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/entry.js:15:9
+     33    5.1%      LazyCompile: *Readable.read _stream_readable.js:394:35
+     11   33.3%        LazyCompile: *pipeOnDrainFunctionResult _stream_readable.js:774:44
+     11  100.0%          LazyCompile: *ondrain internal/http.js:30:17
+     11  100.0%            LazyCompile: *afterWrite _stream_writable.js:479:20
+      7   21.2%        LazyCompile: *flow _stream_readable.js:974:14
+      3   42.9%          LazyCompile: ~pipeOnDrainFunctionResult _stream_readable.js:774:44
+      3  100.0%            LazyCompile: *ondrain internal/http.js:30:17
+      2   28.6%          LazyCompile: ~resume_ _stream_readable.js:950:17
+      2  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1   14.3%          LazyCompile: ~emitReadable_ _stream_readable.js:554:23
+      1  100.0%            LazyCompile: ~onEofChunk _stream_readable.js:513:20
+      1   14.3%          LazyCompile: *ondrain internal/http.js:30:17
+      1  100.0%            LazyCompile: *afterWrite _stream_writable.js:479:20
+      6   18.2%        LazyCompile: *resume_ _stream_readable.js:950:17
+      6  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      4   12.1%        LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:269:53
+      4  100.0%          LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:320:50
+      2   50.0%            LazyCompile: ~<anonymous> fs.js:153:10
+      2    6.1%        LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:320:50
+      2  100.0%          LazyCompile: *<anonymous> fs.js:153:10
+      2    6.1%        LazyCompile: *emitReadable_ _stream_readable.js:554:23
+      2  100.0%          LazyCompile: *onEofChunk _stream_readable.js:513:20
+      2  100.0%            LazyCompile: *readableAddChunk _stream_readable.js:218:26
+      1    3.0%        LazyCompile: *maybeReadMore_ _stream_readable.js:589:24
+      1  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     19    2.9%      LazyCompile: *createWriteWrap internal/stream_base_commons.js:95:25
+     10   52.6%        LazyCompile: ~writevGeneric internal/stream_base_commons.js:107:23
+     10  100.0%          LazyCompile: ~Socket._writeGeneric net.js:670:42
+      8   80.0%            LazyCompile: ~Socket._writev net.js:702:36
+      1   10.0%            LazyCompile: *doWrite _stream_writable.js:407:17
+      1   10.0%            LazyCompile: *<anonymous> _stream_writable.js:615:17
+      7   36.8%        LazyCompile: *connectionCorkNT _http_outgoing.js:617:26
+      7  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      2   10.5%        LazyCompile: ~writeGeneric internal/stream_base_commons.js:133:22
+      2  100.0%          LazyCompile: ~Socket._writeGeneric net.js:670:42
+      2  100.0%            LazyCompile: ~Socket._write net.js:707:35
+     18    2.8%      LazyCompile: *_storeHeader _http_outgoing.js:276:22
+     17   94.4%        LazyCompile: *writeHead _http_server.js:218:19
+     14   82.4%          LazyCompile: *ondata _stream_readable.js:711:18
+     14  100.0%            LazyCompile: *emit events.js:149:44
+      3   17.6%          LazyCompile: *write_ _http_outgoing.js:555:16
+      2   66.7%            LazyCompile: *emit events.js:149:44
+      1   33.3%            LazyCompile: ~write _http_outgoing.js:551:49
+      1    5.6%        LazyCompile: ~writeHead _http_server.js:218:19
+      1  100.0%          LazyCompile: *ondata _stream_readable.js:711:18
+      1  100.0%            LazyCompile: *emit events.js:149:44
+     16    2.5%      LazyCompile: *getStatsFromBinding internal/fs/utils.js:313:29
+     14   87.5%        LazyCompile: ~<anonymous> fs.js:164:10
+     14    2.2%      LazyCompile: *<anonymous> internal/fs/streams.js:168:55
+     12   85.7%        LazyCompile: *wrapper fs.js:475:19
+      2   14.3%        LazyCompile: ~wrapper fs.js:475:19
+     13    2.0%      LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     13    2.0%      LazyCompile: *Readable.on _stream_readable.js:845:33
+      7   53.8%        LazyCompile: *once events.js:300:44
+      7  100.0%          LazyCompile: *ReadStream._read internal/fs/streams.js:135:38
+      7  100.0%            LazyCompile: *Readable.read _stream_readable.js:394:35
+      6   46.2%        LazyCompile: *connectionListenerInternal _http_server.js:344:36
+      6  100.0%          LazyCompile: *connectionListener _http_server.js:338:28
+      6  100.0%            LazyCompile: *onconnection net.js:1442:22
+     13    2.0%      LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      7   53.8%        T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+      3   23.1%        LazyCompile: *dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      3  100.0%          LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/entry.js:15:9
+      3  100.0%            LazyCompile: *dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      2   15.4%        LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/entry.js:15:9
+      2  100.0%          LazyCompile: *<anonymous> internal/streams/destroy.js:37:30
+      2  100.0%            LazyCompile: *emit events.js:149:44
+      1    7.7%        LazyCompile: ~dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      1  100.0%          LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/entry.js:15:9
+      1  100.0%            LazyCompile: ~dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+     11    1.7%      LazyCompile: *ReadStream._read internal/fs/streams.js:135:38
+      9   81.8%        LazyCompile: *Readable.read _stream_readable.js:394:35
+      8   88.9%          LazyCompile: *maybeReadMore_ _stream_readable.js:589:24
+      8  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1   11.1%          LazyCompile: ~maybeReadMore_ _stream_readable.js:589:24
+      1  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      2   18.2%        LazyCompile: ~<anonymous> internal/fs/streams.js:137:38
+      2  100.0%          LazyCompile: *onceWrapper events.js:284:21
+      2  100.0%            LazyCompile: *emit events.js:149:44
+      9    1.4%      LazyCompile: ~handleWriteReq internal/stream_base_commons.js:36:24
+      5   55.6%        LazyCompile: *Writable.uncork _stream_writable.js:311:37
+      5  100.0%          LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+      5  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      2   22.2%        LazyCompile: *cleanup /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/ee-first/index.js:58:19
+      2  100.0%          LazyCompile: ~doWrite _stream_writable.js:407:17
+      1   50.0%            LazyCompile: ~clearBuffer _stream_writable.js:498:21
+      1   50.0%            LazyCompile: *Writable.write _stream_writable.js:275:36
+      1   11.1%        LazyCompile: ~doWrite _stream_writable.js:407:17
+      1  100.0%          LazyCompile: *Writable.write _stream_writable.js:275:36
+      1  100.0%            LazyCompile: *end _http_outgoing.js:652:45
+      1   11.1%        LazyCompile: *connectionCorkNT _http_outgoing.js:617:26
+      1  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      9    1.4%      LazyCompile: ~Module._extensions..json internal/modules/cjs/loader.js:790:39
+      9  100.0%        LazyCompile: ~Module.load internal/modules/cjs/loader.js:633:33
+      9  100.0%          LazyCompile: ~Module._load internal/modules/cjs/loader.js:508:24
+      9  100.0%            LazyCompile: ~Module.require internal/modules/cjs/loader.js:673:36
+      9    1.4%      LazyCompile: *Writable.uncork _stream_writable.js:311:37
+      9  100.0%        LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+      9  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      8    1.2%      LazyCompile: *readableAddChunk _stream_readable.js:218:26
+      8  100.0%        LazyCompile: *<anonymous> internal/fs/streams.js:168:55
+      8  100.0%          LazyCompile: *wrapper fs.js:475:19
+      7    1.1%      LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:320:50
+      5   71.4%        LazyCompile: *<anonymous> fs.js:153:10
+      7    1.1%      LazyCompile: *destroy internal/streams/destroy.js:4:17
+      6   85.7%        LazyCompile: *onceWrapper events.js:284:21
+      4   66.7%          LazyCompile: ~<anonymous> _stream_writable.js:615:17
+      4  100.0%            LazyCompile: *afterShutdown net.js:379:23
+      2   33.3%          LazyCompile: *emit events.js:149:44
+      2  100.0%            LazyCompile: ~finishMaybe _stream_writable.js:638:21
+      1   14.3%        LazyCompile: ~<anonymous> internal/fs/streams.js:108:26
+      1  100.0%          LazyCompile: *endReadableNT _stream_readable.js:1147:23
+      1  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+    157    4.5%    LazyCompile: *Readable.read _stream_readable.js:394:35
+     48   30.6%      LazyCompile: *maybeReadMore_ _stream_readable.js:589:24
+     48  100.0%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     32   20.4%      LazyCompile: *resume_ _stream_readable.js:950:17
+     32  100.0%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     27   17.2%      LazyCompile: *pipeOnDrainFunctionResult _stream_readable.js:774:44
+     27  100.0%        LazyCompile: *ondrain internal/http.js:30:17
+     27  100.0%          LazyCompile: *afterWrite _stream_writable.js:479:20
+     27  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     13    8.3%      LazyCompile: ~Socket net.js:236:16
+     12   92.3%        LazyCompile: *onconnection net.js:1442:22
+      1    7.7%        LazyCompile: ~onconnection net.js:1442:22
+     10    6.4%      LazyCompile: *flow _stream_readable.js:974:14
+      6   60.0%        LazyCompile: *ondrain internal/http.js:30:17
+      6  100.0%          LazyCompile: *afterWrite _stream_writable.js:479:20
+      6  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      2   20.0%        LazyCompile: ~pipeOnDrainFunctionResult _stream_readable.js:774:44
+      1   50.0%          LazyCompile: *ondrain internal/http.js:30:17
+      1  100.0%            LazyCompile: *afterWrite _stream_writable.js:479:20
+      1   50.0%          LazyCompile: *emit events.js:149:44
+      1  100.0%            LazyCompile: ~ondrain internal/http.js:30:17
+      2   20.0%        LazyCompile: ~emitReadable_ _stream_readable.js:554:23
+      2  100.0%          LazyCompile: ~onEofChunk _stream_readable.js:513:20
+      2  100.0%            LazyCompile: *readableAddChunk _stream_readable.js:218:26
+      9    5.7%      LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:269:53
+      9  100.0%        LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:320:50
+      2   22.2%          LazyCompile: ~<anonymous> fs.js:153:10
+      2   22.2%          LazyCompile: *<anonymous> fs.js:153:10
+      5    3.2%      LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:320:50
+      2   40.0%        LazyCompile: ~<anonymous> fs.js:153:10
+      2   40.0%        LazyCompile: *<anonymous> fs.js:153:10
+      4    2.5%      LazyCompile: ~resume_ _stream_readable.js:950:17
+      4  100.0%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      3    1.9%      LazyCompile: ~maybeReadMore_ _stream_readable.js:589:24
+      2   66.7%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1   33.3%        LazyCompile: ~processTicksAndRejections internal/process/task_queues.js:62:35
+      3    1.9%      LazyCompile: ~flow _stream_readable.js:974:14
+      1   33.3%        LazyCompile: ~resume_ _stream_readable.js:950:17
+      1  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1   33.3%        LazyCompile: ~pipeOnDrainFunctionResult _stream_readable.js:774:44
+      1  100.0%          LazyCompile: *emit events.js:149:44
+      1  100.0%            LazyCompile: ~ondrain internal/http.js:30:17
+      1   33.3%        LazyCompile: ~emitReadable_ _stream_readable.js:554:23
+      1  100.0%          LazyCompile: ~onEofChunk _stream_readable.js:513:20
+      1  100.0%            LazyCompile: ~readableAddChunk _stream_readable.js:218:26
+      3    1.9%      LazyCompile: *emitReadable_ _stream_readable.js:554:23
+      2   66.7%        LazyCompile: *onEofChunk _stream_readable.js:513:20
+      2  100.0%          LazyCompile: *readableAddChunk _stream_readable.js:218:26
+      2  100.0%            LazyCompile: *<anonymous> internal/fs/streams.js:168:55
+      1   33.3%        LazyCompile: ~onEofChunk _stream_readable.js:513:20
+      1  100.0%          LazyCompile: *readableAddChunk _stream_readable.js:218:26
+      1  100.0%            LazyCompile: *<anonymous> internal/fs/streams.js:168:55
+    136    3.9%    LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     78    2.2%    LazyCompile: *<anonymous> internal/util/debuglog.js:57:18
+     27   34.6%      LazyCompile: *destroy internal/streams/destroy.js:4:17
+     27  100.0%        LazyCompile: *onceWrapper events.js:284:21
+     19   70.4%          LazyCompile: ~<anonymous> _stream_writable.js:615:17
+     19  100.0%            LazyCompile: *afterShutdown net.js:379:23
+      8   29.6%          LazyCompile: *emit events.js:149:44
+      5   62.5%            LazyCompile: ~finishMaybe _stream_writable.js:638:21
+      3   37.5%            LazyCompile: *<anonymous> _stream_writable.js:615:17
+     13   16.7%      LazyCompile: ~ondata _stream_readable.js:711:18
+     12   92.3%        LazyCompile: *emit events.js:149:44
+      8   66.7%          LazyCompile: *readableAddChunk _stream_readable.js:218:26
+      4   50.0%            LazyCompile: *<anonymous> internal/fs/streams.js:168:55
+      2   25.0%            LazyCompile: ~Readable.push _stream_readable.js:209:35
+      2   25.0%            LazyCompile: *Readable.push _stream_readable.js:209:35
+      4   33.3%          LazyCompile: ~addChunk _stream_readable.js:291:18
+      4  100.0%            LazyCompile: ~readableAddChunk _stream_readable.js:218:26
+      1    7.7%        LazyCompile: ~addChunk _stream_readable.js:291:18
+      1  100.0%          LazyCompile: ~readableAddChunk _stream_readable.js:218:26
+      1  100.0%            LazyCompile: ~Readable.push _stream_readable.js:209:35
+      5    6.4%      LazyCompile: ~onParserExecute _http_server.js:509:25
+      5    6.4%      LazyCompile: ~<anonymous> net.js:584:24
+      2    2.6%      LazyCompile: ~onunpipe _stream_readable.js:663:20
+      2  100.0%        LazyCompile: *emit events.js:149:44
+      2  100.0%          LazyCompile: ~Readable.unpipe _stream_readable.js:787:37
+      2  100.0%            LazyCompile: ~unpipe _stream_readable.js:756:18
+      2    2.6%      LazyCompile: ~end _http_outgoing.js:652:45
+      2  100.0%        LazyCompile: ~onend _stream_readable.js:673:17
+      2  100.0%          LazyCompile: *onceWrapper events.js:284:21
+      2  100.0%            LazyCompile: *endReadableNT _stream_readable.js:1147:23
+      2    2.6%      LazyCompile: ~emitReadable_ _stream_readable.js:554:23
+      2  100.0%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      2    2.6%      LazyCompile: ~Socket._final net.js:354:35
+      2  100.0%        LazyCompile: ~callFinal _stream_writable.js:614:19
+      2  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      2    2.6%      LazyCompile: ~Readable.resume _stream_readable.js:929:37
+      2  100.0%        LazyCompile: *Readable.on _stream_readable.js:845:33
+      1   50.0%          LazyCompile: ~connectionListenerInternal _http_server.js:344:36
+      1  100.0%            LazyCompile: *connectionListener _http_server.js:338:28
+      1   50.0%          LazyCompile: ~Readable.pipe _stream_readable.js:634:35
+      1  100.0%            LazyCompile: ~respond /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/application.js:214:17
+      2    2.6%      LazyCompile: ~Readable.pause _stream_readable.js:963:36
+      2  100.0%        LazyCompile: *ondata _stream_readable.js:711:18
+      2  100.0%          LazyCompile: *emit events.js:149:44
+      2  100.0%            LazyCompile: *readableAddChunk _stream_readable.js:218:26
+      2    2.6%      LazyCompile: *onend _stream_readable.js:673:17
+      2  100.0%        LazyCompile: *onceWrapper events.js:284:21
+      2  100.0%          LazyCompile: *endReadableNT _stream_readable.js:1147:23
+      2  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1    1.3%      LazyCompile: ~write_ _http_outgoing.js:555:16
+      1  100.0%        LazyCompile: ~write _http_outgoing.js:551:49
+      1  100.0%          LazyCompile: ~ondata _stream_readable.js:711:18
+      1  100.0%            LazyCompile: *emit events.js:149:44
+      1    1.3%      LazyCompile: ~socketOnClose _http_server.js:460:23
+      1  100.0%        LazyCompile: *emit events.js:149:44
+      1  100.0%          LazyCompile: ~<anonymous> net.js:584:24
+      1    1.3%      LazyCompile: ~readableAddChunk _stream_readable.js:218:26
+      1  100.0%        LazyCompile: ~Readable.push _stream_readable.js:209:35
+      1  100.0%          LazyCompile: ~parserOnMessageComplete _http_common.js:135:33
+      1    1.3%      LazyCompile: ~onend _stream_readable.js:673:17
+      1  100.0%        LazyCompile: *onceWrapper events.js:284:21
+      1  100.0%          LazyCompile: *endReadableNT _stream_readable.js:1147:23
+      1  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1    1.3%      LazyCompile: ~flow _stream_readable.js:974:14
+      1  100.0%        LazyCompile: ~pipeOnDrainFunctionResult _stream_readable.js:774:44
+      1  100.0%          LazyCompile: *emit events.js:149:44
+      1  100.0%            LazyCompile: ~ondrain internal/http.js:30:17
+      1    1.3%      LazyCompile: ~endReadableNT _stream_readable.js:1147:23
+      1  100.0%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1    1.3%      LazyCompile: ~connectionListenerInternal _http_server.js:344:36
+      1  100.0%        LazyCompile: *connectionListener _http_server.js:338:28
+      1  100.0%          LazyCompile: *onconnection net.js:1442:22
+      1    1.3%      LazyCompile: ~Socket._destroy net.js:564:37
+      1  100.0%        LazyCompile: ~destroy internal/streams/destroy.js:4:17
+      1  100.0%          LazyCompile: ~onceWrapper events.js:284:21
+      1  100.0%            LazyCompile: *emit events.js:149:44
+      1    1.3%      LazyCompile: ~Readable.pipe _stream_readable.js:634:35
+      1  100.0%        LazyCompile: ~respond /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/application.js:214:17
+      1  100.0%          LazyCompile: ~handleResponse /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/application.js:164:28
+      1    1.3%      LazyCompile: *ondrain internal/http.js:30:17
+      1  100.0%        LazyCompile: *afterWrite _stream_writable.js:479:20
+      1  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1    1.3%      LazyCompile: *emit events.js:149:44
+      1  100.0%        LazyCompile: *readableAddChunk _stream_readable.js:218:26
+      1  100.0%          LazyCompile: *Readable.push _stream_readable.js:209:35
+      1    1.3%      LazyCompile: *connectionListenerInternal _http_server.js:344:36
+      1  100.0%        LazyCompile: *connectionListener _http_server.js:338:28
+      1  100.0%          LazyCompile: *onconnection net.js:1442:22
+      1    1.3%      LazyCompile: *Readable.unpipe _stream_readable.js:787:37
+      1  100.0%        LazyCompile: *onceWrapper events.js:284:21
+      1  100.0%          LazyCompile: *onFinish _http_outgoing.js:648:18
+      1  100.0%            LazyCompile: *afterWrite _stream_writable.js:479:20
+      1    1.3%      LazyCompile: *Readable.pipe _stream_readable.js:634:35
+      1  100.0%        LazyCompile: *respond /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/application.js:214:17
+      1  100.0%          LazyCompile: ~handleResponse /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/application.js:164:28
+     67    1.9%    LazyCompile: *ondata _stream_readable.js:711:18
+     67  100.0%      LazyCompile: *emit events.js:149:44
+     67  100.0%        LazyCompile: *readableAddChunk _stream_readable.js:218:26
+     67  100.0%          LazyCompile: *<anonymous> internal/fs/streams.js:168:55
+     63   94.0%            LazyCompile: *wrapper fs.js:475:19
+      3    4.5%            LazyCompile: ~wrapper fs.js:475:19
+     60    1.7%    LazyCompile: *ReadStream._read internal/fs/streams.js:135:38
+     53   88.3%      LazyCompile: *Readable.read _stream_readable.js:394:35
+     49   92.5%        LazyCompile: *maybeReadMore_ _stream_readable.js:589:24
+     49  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      4    7.5%        LazyCompile: ~maybeReadMore_ _stream_readable.js:589:24
+      4  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      4    6.7%      LazyCompile: ~<anonymous> internal/fs/streams.js:137:38
+      4  100.0%        LazyCompile: *onceWrapper events.js:284:21
+      4  100.0%          LazyCompile: *emit events.js:149:44
+      4  100.0%            LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:269:53
+      2    3.3%      LazyCompile: *onceWrapper events.js:284:21
+      2  100.0%        LazyCompile: *emit events.js:149:44
+      2  100.0%          LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:320:50
+      2  100.0%            LazyCompile: *<anonymous> fs.js:153:10
+      1    1.7%      LazyCompile: *<anonymous> internal/fs/streams.js:137:38
+      1  100.0%        LazyCompile: *onceWrapper events.js:284:21
+      1  100.0%          LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:269:53
+      1  100.0%            LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:320:50
+     58    1.7%    LazyCompile: *<anonymous> internal/fs/streams.js:168:55
+     54   93.1%      LazyCompile: *wrapper fs.js:475:19
+      2    3.4%      LazyCompile: ~wrapper fs.js:475:19
+     48    1.4%    LazyCompile: *destroy internal/streams/destroy.js:4:17
+     39   81.3%      LazyCompile: *onceWrapper events.js:284:21
+     32   82.1%        LazyCompile: ~<anonymous> _stream_writable.js:615:17
+     32  100.0%          LazyCompile: *afterShutdown net.js:379:23
+      7   17.9%        LazyCompile: *emit events.js:149:44
+      7  100.0%          LazyCompile: ~finishMaybe _stream_writable.js:638:21
+      7  100.0%            LazyCompile: ~<anonymous> _stream_writable.js:615:17
+      9   18.8%      LazyCompile: ~<anonymous> internal/fs/streams.js:108:26
+      8   88.9%        LazyCompile: *endReadableNT _stream_readable.js:1147:23
+      8  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1   11.1%        LazyCompile: *emit events.js:149:44
+      1  100.0%          LazyCompile: ~endReadableNT _stream_readable.js:1147:23
+      1  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     44    1.3%    LazyCompile: ~ReadableState _stream_readable.js:72:23
+     25   56.8%      LazyCompile: *parserOnHeadersComplete _http_common.js:71:33
+     19   43.2%      LazyCompile: ~Readable _stream_readable.js:151:18
+     12   63.2%        LazyCompile: ~Duplex _stream_duplex.js:49:16
+     12  100.0%          LazyCompile: ~Socket net.js:236:16
+     12  100.0%            LazyCompile: *onconnection net.js:1442:22
+      4   21.1%        LazyCompile: ~ReadStream internal/fs/streams.js:58:20
+      3   75.0%          LazyCompile: *ReadStream /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:260:23
+      3  100.0%            LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+      1   25.0%          LazyCompile: ~ReadStream /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:260:23
+      1  100.0%            LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+      2   10.5%        LazyCompile: ~IncomingMessage _http_incoming.js:39:25
+      2  100.0%          LazyCompile: ~parserOnHeadersComplete _http_common.js:71:33
+      1    5.3%        LazyCompile: *Socket net.js:236:16
+      1  100.0%          LazyCompile: *onconnection net.js:1442:22
+     44    1.3%    LazyCompile: *emit events.js:149:44
+     32   72.7%      LazyCompile: *readableAddChunk _stream_readable.js:218:26
+     26   81.3%        LazyCompile: *<anonymous> internal/fs/streams.js:168:55
+     22   84.6%          LazyCompile: *wrapper fs.js:475:19
+      1    3.8%          LazyCompile: ~wrapper fs.js:475:19
+      4   12.5%        LazyCompile: *Readable.push _stream_readable.js:209:35
+      1   25.0%          LazyCompile: ~<anonymous> internal/fs/streams.js:168:55
+      2    6.3%        LazyCompile: ~Readable.push _stream_readable.js:209:35
+      2  100.0%          LazyCompile: ~<anonymous> internal/fs/streams.js:168:55
+      2  100.0%            LazyCompile: ~wrapper fs.js:475:19
+      3    6.8%      LazyCompile: ~onFinish _http_outgoing.js:648:18
+      2   66.7%        LazyCompile: *afterWrite _stream_writable.js:479:20
+      2  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1   33.3%        LazyCompile: ~afterWrite _stream_writable.js:479:20
+      1  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      3    6.8%      LazyCompile: *Accepts.encoding.Accepts.encodings /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/accepts/index.js:127:40
+      3  100.0%        LazyCompile: *parserOnHeadersComplete _http_common.js:71:33
+      2    4.5%      LazyCompile: ~<anonymous> net.js:584:24
+      2    4.5%      LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:269:53
+      2  100.0%        LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:320:50
+      1   50.0%          LazyCompile: *<anonymous> fs.js:153:10
+      1    2.3%      LazyCompile: ~emitReadable_ _stream_readable.js:554:23
+      1  100.0%        LazyCompile: ~onEofChunk _stream_readable.js:513:20
+      1  100.0%          LazyCompile: *readableAddChunk _stream_readable.js:218:26
+      1  100.0%            LazyCompile: *<anonymous> internal/fs/streams.js:168:55
+      1    2.3%      LazyCompile: ~<anonymous> _stream_writable.js:615:17
+      1  100.0%        LazyCompile: *afterShutdown net.js:379:23
+     35    1.0%    LazyCompile: ~Socket._writeGeneric net.js:670:42
+     23   65.7%      LazyCompile: ~Socket._write net.js:707:35
+     23  100.0%        LazyCompile: ~doWrite _stream_writable.js:407:17
+     11   47.8%          LazyCompile: ~clearBuffer _stream_writable.js:498:21
+     11  100.0%            LazyCompile: ~Writable.uncork _stream_writable.js:311:37
+      6   26.1%          LazyCompile: *_writeRaw _http_outgoing.js:246:19
+      6  100.0%            LazyCompile: ~_send _http_outgoing.js:213:49
+      6   26.1%          LazyCompile: *Writable.write _stream_writable.js:275:36
+      6  100.0%            LazyCompile: *end _http_outgoing.js:652:45
+      7   20.0%      LazyCompile: ~Socket._writev net.js:702:36
+      7  100.0%        LazyCompile: ~doWrite _stream_writable.js:407:17
+      3   42.9%          LazyCompile: *connectionCorkNT _http_outgoing.js:617:26
+      3  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      2   28.6%          LazyCompile: ~clearBuffer _stream_writable.js:498:21
+      2  100.0%            LazyCompile: ~Writable.uncork _stream_writable.js:311:37
+      1   14.3%          LazyCompile: *clearBuffer _stream_writable.js:498:21
+      1  100.0%            LazyCompile: ~Writable.uncork _stream_writable.js:311:37
+      1   14.3%          LazyCompile: *Writable.uncork _stream_writable.js:311:37
+      1  100.0%            LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+      3    8.6%      LazyCompile: *doWrite _stream_writable.js:407:17
+      2   66.7%        LazyCompile: *connectionCorkNT _http_outgoing.js:617:26
+      2  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1   33.3%        LazyCompile: *WritableState _stream_writable.js:56:23
+      1  100.0%          LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+      1  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      2    5.7%      LazyCompile: *<anonymous> _stream_writable.js:615:17
+      2  100.0%        LazyCompile: *connectionCorkNT _http_outgoing.js:617:26
+      2  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     35    1.0%    LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+     17   48.6%      T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+     16   45.7%      LazyCompile: *serve /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-static/index.js:39:33
+      8   50.0%        LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      8  100.0%          LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/entry.js:15:9
+      5   62.5%            LazyCompile: *<anonymous> internal/streams/destroy.js:37:30
+      3   37.5%            LazyCompile: *handleRequest /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa/lib/application.js:160:16
+      6   37.5%        LazyCompile: *dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      6  100.0%          LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      6  100.0%            LazyCompile: *dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      2   12.5%        LazyCompile: ~dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      2  100.0%          LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      2  100.0%            LazyCompile: ~dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      2    5.7%      LazyCompile: ~serve /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-static/index.js:39:33
+      1   50.0%        LazyCompile: ~dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      1  100.0%          LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      1  100.0%            LazyCompile: ~dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      1   50.0%        LazyCompile: *dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      1  100.0%          LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:31:19
+      1  100.0%            LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+
+   1800   17.7%  T _task_threads
+   1469   81.6%    LazyCompile: *handleWriteReq internal/stream_base_commons.js:36:24
+    456   31.0%      LazyCompile: *connectionCorkNT _http_outgoing.js:617:26
+    456  100.0%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+    319   21.7%      LazyCompile: ~writeGeneric internal/stream_base_commons.js:133:22
+    319  100.0%        LazyCompile: ~Socket._writeGeneric net.js:670:42
+    319  100.0%          LazyCompile: ~Socket._write net.js:707:35
+    319  100.0%            LazyCompile: ~doWrite _stream_writable.js:407:17
+    225   15.3%      LazyCompile: *Writable.uncork _stream_writable.js:311:37
+    225  100.0%        LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+    225  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+    129    8.8%      LazyCompile: *onend _stream_readable.js:673:17
+    129  100.0%        LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+    129  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+    120    8.2%      LazyCompile: *clearBuffer _stream_writable.js:498:21
+    115   95.8%        LazyCompile: ~Writable.uncork _stream_writable.js:311:37
+    115  100.0%          LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+    115  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      5    4.2%        LazyCompile: ~doWrite _stream_writable.js:407:17
+      4   80.0%          LazyCompile: ~clearBuffer _stream_writable.js:498:21
+      4  100.0%            LazyCompile: ~Writable.uncork _stream_writable.js:311:37
+      1   20.0%          LazyCompile: *Writable.write _stream_writable.js:275:36
+      1  100.0%            LazyCompile: *end _http_outgoing.js:652:45
+     69    4.7%      LazyCompile: *<anonymous> _stream_writable.js:615:17
+     69  100.0%        LazyCompile: *Writable.write _stream_writable.js:275:36
+     69  100.0%          LazyCompile: *end _http_outgoing.js:652:45
+     69  100.0%            LazyCompile: *onceWrapper events.js:284:21
+     48    3.3%      LazyCompile: *Socket._write net.js:707:35
+     48  100.0%        LazyCompile: ~doWrite _stream_writable.js:407:17
+     27   56.3%          LazyCompile: ~clearBuffer _stream_writable.js:498:21
+     27  100.0%            LazyCompile: ~Writable.uncork _stream_writable.js:311:37
+     21   43.8%          LazyCompile: *Writable.write _stream_writable.js:275:36
+     21  100.0%            LazyCompile: *end _http_outgoing.js:652:45
+     42    2.9%      LazyCompile: *doWrite _stream_writable.js:407:17
+     26   61.9%        LazyCompile: *Writable.write _stream_writable.js:275:36
+     26  100.0%          LazyCompile: *end _http_outgoing.js:652:45
+     26  100.0%            LazyCompile: ~onend _stream_readable.js:673:17
+     16   38.1%        LazyCompile: ~clearBuffer _stream_writable.js:498:21
+     16  100.0%          LazyCompile: ~Writable.uncork _stream_writable.js:311:37
+     16  100.0%            LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+     38    2.6%      LazyCompile: *WritableState _stream_writable.js:56:23
+     38  100.0%        LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+     38  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     17    1.2%      LazyCompile: *<anonymous> internal/fs/streams.js:219:23
+     15   88.2%        LazyCompile: ~clearBuffer _stream_writable.js:498:21
+     15  100.0%          LazyCompile: ~Writable.uncork _stream_writable.js:311:37
+     15  100.0%            LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+      2   11.8%        LazyCompile: *_writeRaw _http_outgoing.js:246:19
+      2  100.0%          LazyCompile: ~_send _http_outgoing.js:213:49
+      2  100.0%            LazyCompile: *onend _stream_readable.js:673:17
+    275   15.3%    LazyCompile: *writeGeneric internal/stream_base_commons.js:133:22
+    275  100.0%      LazyCompile: ~Socket._writeGeneric net.js:670:42
+    275  100.0%        LazyCompile: ~Socket._write net.js:707:35
+    275  100.0%          LazyCompile: ~doWrite _stream_writable.js:407:17
+    153   55.6%            LazyCompile: ~clearBuffer _stream_writable.js:498:21
+     86   31.3%            LazyCompile: *Writable.write _stream_writable.js:275:36
+     30   10.9%            LazyCompile: *_writeRaw _http_outgoing.js:246:19
+      6    2.2%            LazyCompile: ~writeOrBuffer _stream_writable.js:367:23
+     27    1.5%    LazyCompile: *ReadableState _stream_readable.js:72:23
+     27  100.0%      LazyCompile: ~Socket._write net.js:707:35
+     27  100.0%        LazyCompile: ~doWrite _stream_writable.js:407:17
+     21   77.8%          LazyCompile: *Writable.write _stream_writable.js:275:36
+     21  100.0%            LazyCompile: *end _http_outgoing.js:652:45
+      6   22.2%          LazyCompile: *_writeRaw _http_outgoing.js:246:19
+      6  100.0%            LazyCompile: ~_send _http_outgoing.js:213:49
+     20    1.1%    LazyCompile: ~Socket._writeGeneric net.js:670:42
+     20  100.0%      LazyCompile: ~Socket._write net.js:707:35
+     20  100.0%        LazyCompile: ~doWrite _stream_writable.js:407:17
+     20  100.0%          LazyCompile: *Writable.write _stream_writable.js:275:36
+     20  100.0%            LazyCompile: *end _http_outgoing.js:652:45
+
+    514    5.0%  T _mach_msg
+    514  100.0%    LazyCompile: *destroy internal/streams/destroy.js:4:17
+    514  100.0%      LazyCompile: *onceWrapper events.js:284:21
+    381   74.1%        LazyCompile: ~<anonymous> _stream_writable.js:615:17
+    381  100.0%          LazyCompile: *afterShutdown net.js:379:23
+    127   24.7%        LazyCompile: *emit events.js:149:44
+     93   73.2%          LazyCompile: ~finishMaybe _stream_writable.js:638:21
+     93  100.0%            LazyCompile: ~<anonymous> _stream_writable.js:615:17
+     27   21.3%          LazyCompile: *<anonymous> _stream_writable.js:615:17
+     21   77.8%            LazyCompile: *afterShutdown net.js:379:23
+      6   22.2%            LazyCompile: ~afterShutdown net.js:379:23
+      7    5.5%          LazyCompile: *Socket._writev net.js:702:36
+      7  100.0%            LazyCompile: *afterShutdown net.js:379:23
+      6    1.2%        LazyCompile: *onend _stream_readable.js:673:17
+      6  100.0%          LazyCompile: ~<anonymous> _stream_writable.js:615:17
+      6  100.0%            LazyCompile: *afterShutdown net.js:379:23
+
+    425    4.2%  T _thread_info
+
+    379    3.7%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_11WriteBufferERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+    375   98.9%    T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+    375  100.0%      LazyCompile: ~handleWriteReq internal/stream_base_commons.js:36:24
+    211   56.3%        LazyCompile: *Writable.uncork _stream_writable.js:311:37
+    211  100.0%          LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+    211  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     69   18.4%        LazyCompile: *connectionCorkNT _http_outgoing.js:617:26
+     69  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     32    8.5%        LazyCompile: ~writeGeneric internal/stream_base_commons.js:133:22
+     32  100.0%          LazyCompile: ~Socket._writeGeneric net.js:670:42
+     32  100.0%            LazyCompile: ~Socket._write net.js:707:35
+     19    5.1%        LazyCompile: *clearBuffer _stream_writable.js:498:21
+     19  100.0%          LazyCompile: ~Writable.uncork _stream_writable.js:311:37
+     19  100.0%            LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+     18    4.8%        LazyCompile: ~doWrite _stream_writable.js:407:17
+     18  100.0%          LazyCompile: ~clearBuffer _stream_writable.js:498:21
+     18  100.0%            LazyCompile: ~Writable.uncork _stream_writable.js:311:37
+     17    4.5%        LazyCompile: *cleanup /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/ee-first/index.js:58:19
+     17  100.0%          LazyCompile: ~doWrite _stream_writable.js:407:17
+     17  100.0%            LazyCompile: ~clearBuffer _stream_writable.js:498:21
+      6    1.6%        LazyCompile: *doWrite _stream_writable.js:407:17
+      6  100.0%          LazyCompile: ~Writable.uncork _stream_writable.js:311:37
+      6  100.0%            LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+      4    1.1%    LazyCompile: *handleWriteReq internal/stream_base_commons.js:36:24
+      3   75.0%      LazyCompile: *connectionCorkNT _http_outgoing.js:617:26
+      3  100.0%        LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1   25.0%      LazyCompile: *onend _stream_readable.js:673:17
+      1  100.0%        LazyCompile: ~connectionCorkNT _http_outgoing.js:617:26
+      1  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+
+    349    3.4%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_6WritevERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+    349  100.0%    T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+    349  100.0%      LazyCompile: ~writevGeneric internal/stream_base_commons.js:107:23
+    307   88.0%        LazyCompile: ~Socket._writeGeneric net.js:670:42
+    233   75.9%          LazyCompile: ~Socket._writev net.js:702:36
+    233  100.0%            LazyCompile: ~doWrite _stream_writable.js:407:17
+     38   12.4%          LazyCompile: *<anonymous> _stream_writable.js:615:17
+     19   50.0%            LazyCompile: *onend _stream_readable.js:673:17
+     19   50.0%            LazyCompile: *connectionCorkNT _http_outgoing.js:617:26
+     35   11.4%          LazyCompile: *doWrite _stream_writable.js:407:17
+     12   34.3%            LazyCompile: *connectionCorkNT _http_outgoing.js:617:26
+     10   28.6%            LazyCompile: *WritableState _stream_writable.js:56:23
+      6   17.1%            LazyCompile: *Writable.uncork _stream_writable.js:311:37
+      4   11.4%            LazyCompile: ~clearBuffer _stream_writable.js:498:21
+      3    8.6%            LazyCompile: *clearBuffer _stream_writable.js:498:21
+     25    7.2%        LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/thenify/index.js:37:18
+     25  100.0%          LazyCompile: ~Socket._writev net.js:702:36
+     25  100.0%            LazyCompile: ~doWrite _stream_writable.js:407:17
+     16    4.6%        LazyCompile: *Socket._writev net.js:702:36
+     16  100.0%          LazyCompile: ~doWrite _stream_writable.js:407:17
+     12   75.0%            LazyCompile: *Writable.uncork _stream_writable.js:311:37
+      4   25.0%            LazyCompile: *clearBuffer _stream_writable.js:498:21
+
+    347    3.4%  t _bcopy
+
+    256    2.5%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    251   98.0%    T __ZN2v810Int16Array9CheckCastEPNS_5ValueE
+    249   99.2%      LazyCompile: ~readSync fs.js:489:18
+    249  100.0%        LazyCompile: ~tryReadSync fs.js:334:21
+    249  100.0%          LazyCompile: ~readFileSync fs.js:346:22
+    243   97.6%            LazyCompile: ~Module._extensions..js internal/modules/cjs/loader.js:783:37
+      5    2.0%    LazyCompile: *ReadStream._read internal/fs/streams.js:135:38
+      4   80.0%      LazyCompile: *Readable.read _stream_readable.js:394:35
+      4  100.0%        LazyCompile: *maybeReadMore_ _stream_readable.js:589:24
+      4  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1   20.0%      LazyCompile: *onceWrapper events.js:284:21
+      1  100.0%        LazyCompile: *emit events.js:149:44
+      1  100.0%          LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:320:50
+      1  100.0%            LazyCompile: *<anonymous> fs.js:153:10
+
+    179    1.8%  T _chmod
+    127   70.9%    LazyCompile: *ReadStream._read internal/fs/streams.js:135:38
+     98   77.2%      LazyCompile: *Readable.read _stream_readable.js:394:35
+     92   93.9%        LazyCompile: *maybeReadMore_ _stream_readable.js:589:24
+     92  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      6    6.1%        LazyCompile: ~maybeReadMore_ _stream_readable.js:589:24
+      6  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     15   11.8%      LazyCompile: *onceWrapper events.js:284:21
+     15  100.0%        LazyCompile: *emit events.js:149:44
+     14   93.3%          LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:320:50
+     11   78.6%            LazyCompile: *<anonymous> fs.js:153:10
+      3   21.4%            LazyCompile: ~<anonymous> fs.js:153:10
+      1    6.7%          LazyCompile: *getHighWaterMark internal/streams/state.js:12:26
+     13   10.2%      LazyCompile: ~<anonymous> internal/fs/streams.js:137:38
+     13  100.0%        LazyCompile: *onceWrapper events.js:284:21
+     13  100.0%          LazyCompile: *emit events.js:149:44
+     13  100.0%            LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:269:53
+     25   14.0%    LazyCompile: *destroy internal/streams/destroy.js:4:17
+     25  100.0%      LazyCompile: ~<anonymous> internal/fs/streams.js:108:26
+     24   96.0%        LazyCompile: *endReadableNT _stream_readable.js:1147:23
+     24  100.0%          LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+      1    4.0%        LazyCompile: *emit events.js:149:44
+      1  100.0%          LazyCompile: ~endReadableNT _stream_readable.js:1147:23
+      1  100.0%            LazyCompile: *processTicksAndRejections internal/process/task_queues.js:62:35
+     10    5.6%    LazyCompile: *stat fs.js:822:14
+      5   50.0%      RegExp: ^[0-2]\.
+      5  100.0%        LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+      5  100.0%          LazyCompile: *serve /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-static/index.js:39:33
+      3   60.0%            LazyCompile: *dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      1   20.0%            LazyCompile: ~dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      1   20.0%            LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      5   50.0%      LazyCompile: ~<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/polyfills.js:285:21
+      5  100.0%        LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+      5  100.0%          LazyCompile: *serve /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-static/index.js:39:33
+      3   60.0%            LazyCompile: *<anonymous> /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-mount/index.js:48:25
+      2   40.0%            LazyCompile: *dispatch /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-compose/index.js:35:23
+      9    5.0%    LazyCompile: *open fs.js:412:14
+      5   55.6%      LazyCompile: *ReadStream$open /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:267:28
+      5  100.0%        LazyCompile: ~ReadStream internal/fs/streams.js:58:20
+      3   60.0%          LazyCompile: *ReadStream /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:260:23
+      3  100.0%            LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+      2   40.0%          LazyCompile: ~ReadStream /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:260:23
+      2  100.0%            LazyCompile: *send /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/koa-send/index.js:37:21
+      4   44.4%      LazyCompile: ~go$open /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:319:22
+      3   75.0%        LazyCompile: *ReadStream$open /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:267:28
+      3  100.0%          LazyCompile: ~ReadStream internal/fs/streams.js:58:20
+      3  100.0%            LazyCompile: ~ReadStream /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:260:23
+      1   25.0%        LazyCompile: ~open /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:313:17
+      1  100.0%          LazyCompile: ~ReadStream$open /Users/moyongxin/github/mo-demos/node-demos/geekbang/like-geektime/node_modules/graceful-fs/graceful-fs.js:267:28
+      1  100.0%            LazyCompile: ~ReadStream internal/fs/streams.js:58:20
+
+    159    1.6%  T _thread_policy_get
+
