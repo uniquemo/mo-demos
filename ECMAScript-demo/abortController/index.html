@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="calculate">Calculate</button>
+
+  <script type="module">
+    // document.querySelector('#calculate').addEventListener('click', async ({ target }) => { // 1
+    //   target.innerText = 'Stop calculation'
+    //   const result = await calculate()  // 2
+
+    //   alert(result) // 3
+
+    //   target.innerText = 'Calculate'
+    // })
+
+    // function calculate() {
+    //   return new Promise((resolve, reject) => {
+    //     setTimeout(()=> {
+    //       resolve(1)
+    //     }, 3000)
+    //   })
+    // }
+
+  { // 1
+    let abortController = null  // 2
+
+    document.querySelector('#calculate').addEventListener('click', async ({ target }) => {
+      if (abortController) {
+        abortController.abort() // 5
+        abortController = null
+        target.innerText = 'Calculate'
+        return
+      }
+
+      abortController = new AbortController() // 3
+      target.innerText = 'Stop calculation'
+
+      try {
+        const result = await calculate(abortController.signal)  // 4
+        alert(result)
+      } catch {
+        alert('WHY DID YOU DO THAT?!')  // 9
+      } finally { // 10
+        abortController = null
+        target.innerText = 'Calculate'
+      }
+    })
+
+    function calculate(abortSignal) {
+      return new Promise((resolve, reject) => {
+        const error = new DOMException( 'Calculation aborted by the user', 'AbortError' )
+
+        if (abortSignal.aborted) {
+          return reject(error)
+        }
+
+        const timeout = setTimeout(()=> {
+          resolve(1)
+        }, 5000)
+
+        abortSignal.addEventListener('abort', () => { // 6
+          clearTimeout(timeout) // 7
+          reject(error) // 8
+        })
+      })
+    }
+  }
+  </script>
+</body>
+</html>
