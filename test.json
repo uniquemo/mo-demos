@@ -3,17 +3,17 @@
     "name": "layout",
     "description": "导航",
     "match": "/",
-    "changelog": "PRODUCT：layout\nCOMMIT：eebf69b971e28bfd19ba2bb6b9552fed9c39f332\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/139073/build/1065/pipeline\n",
-    "commitId": "eebf69b971e28bfd19ba2bb6b9552fed9c39f332",
-    "changeAt": "2020-09-03 13:54:28.0",
+    "changelog": "PRODUCT：layout\nCOMMIT：ad106652aedcc2752f5b3da3b7d175cfedd6d084\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/139073/build/1182/pipeline\n",
+    "commitId": "ad106652aedcc2752f5b3da3b7d175cfedd6d084",
+    "changeAt": "2020-09-10 15:15:50.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/layout/layout-922f279c.css"
+      "https://assets.codehub.cn/micro-frontend/layout/layout-8157ad3e.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/layout/runtime~layout-7f49f514.js",
-      "https://assets.codehub.cn/micro-frontend/layout/uikit~layout-37946569.js",
-      "https://assets.codehub.cn/micro-frontend/layout/vendors~layout-7593dd4d.js",
-      "https://assets.codehub.cn/micro-frontend/layout/layout-922f279c.js"
+      "https://assets.codehub.cn/micro-frontend/layout/runtime~layout-9efb59a4.js",
+      "https://assets.codehub.cn/micro-frontend/layout/uikit~layout-1366bec6.js",
+      "https://assets.codehub.cn/micro-frontend/layout/vendors~layout-9f0a4690.js",
+      "https://assets.codehub.cn/micro-frontend/layout/layout-8157ad3e.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/layout/"
@@ -22,16 +22,16 @@
   {
     "name": "container",
     "description": "主页面",
-    "match": "^\\/(u\\/|p\\/[^/]+\\/(milestone|cd\\/website|approval-flow|stats/(?!bug)|tasks|task|qta|search)|unauthorized|oauth_authorize.html|404|user/tasks)",
-    "changelog": "PRODUCT：container\nCOMMIT：ed147cef45f56d8520c8677bd88992d9c9226434\nCI：https://codingcorp.coding.net/p/coding-frontend/ci/job/1583/build/3808/pipeline",
-    "commitId": "ed147cef45f56d8520c8677bd88992d9c9226434",
-    "changeAt": "2020-07-02 18:04:54.0",
+    "match": "^\\/(u\\/|p\\/[^/]+\\/(milestone|approval-flow|stats/(?!bug)|tasks|task|qta|search)|unauthorized|oauth_authorize.html|404|user/tasks)",
+    "changelog": "PRODUCT：container\nCOMMIT：fa2ab98f2ca0fef5e615b27fe106cf7fedcc38d1\nCI：https://codingcorp.coding.net/p/coding-frontend/ci/job/1583/build/3818/pipeline\n",
+    "commitId": "fa2ab98f2ca0fef5e615b27fe106cf7fedcc38d1",
+    "changeAt": "2020-09-03 19:36:03.0",
     "css": [
       "https://assets.codehub.cn/static-enterprise/css/index.9ebb5fe7.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/static-enterprise/js/runtime~index.b052d502.js",
-      "https://assets.codehub.cn/static-enterprise/js/index.fd567f33.chunk.js"
+      "https://assets.codehub.cn/static-enterprise/js/runtime~index.86b96815.js",
+      "https://assets.codehub.cn/static-enterprise/js/index.f14dffd1.chunk.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/static-enterprise"
@@ -41,17 +41,17 @@
     "name": "login",
     "description": "登录/注册",
     "match": "^/(activate|invite|signin/iforgot|signin/reset|signin/by-weixin/select|signin/complete|user/teams|signup/activate|signup/binding-e-weixin).*",
-    "changelog": "PRODUCT：login\nCOMMIT：c6dfc2935fb3588e7ddebb4b7f4433923dac780b\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/138696/build/289/pipeline\n",
-    "commitId": "c6dfc2935fb3588e7ddebb4b7f4433923dac780b",
-    "changeAt": "2020-08-27 13:55:42.0",
+    "changelog": "PRODUCT：login\nCOMMIT：9828119bd69ac184645b245cbf8cc796179758b6\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/138696/build/306/pipeline\n",
+    "commitId": "9828119bd69ac184645b245cbf8cc796179758b6",
+    "changeAt": "2020-09-10 17:04:29.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/login/login-a273509c.css"
+      "https://assets.codehub.cn/micro-frontend/login/login-a8112e27.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/login/runtime~login-8c9dd37e.js",
-      "https://assets.codehub.cn/micro-frontend/login/uikit~login-c87344c0.js",
-      "https://assets.codehub.cn/micro-frontend/login/vendors~login-ba29cbce.js",
-      "https://assets.codehub.cn/micro-frontend/login/login-a273509c.js"
+      "https://assets.codehub.cn/micro-frontend/login/runtime~login-d4991ab1.js",
+      "https://assets.codehub.cn/micro-frontend/login/uikit~login-d04c7ba1.js",
+      "https://assets.codehub.cn/micro-frontend/login/vendors~login-a84a3737.js",
+      "https://assets.codehub.cn/micro-frontend/login/login-a8112e27.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/login/"
@@ -61,17 +61,17 @@
     "name": "team",
     "description": "团队管理",
     "match": "^/admin(?!/deployment)",
-    "changelog": "PRODUCT：team\nCOMMIT：5079ba666de7831552ad52bed0cdb863b07e6db6\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/145042/build/770/pipeline\n",
-    "commitId": "5079ba666de7831552ad52bed0cdb863b07e6db6",
-    "changeAt": "2020-09-02 16:01:54.0",
+    "changelog": "PRODUCT：team\nCOMMIT：b381f0d8e6a3969ed7eae1160cc7446a0d7c6615\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/145042/build/853/pipeline\n",
+    "commitId": "b381f0d8e6a3969ed7eae1160cc7446a0d7c6615",
+    "changeAt": "2020-09-10 18:22:25.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/team/team-4d341d2a.css"
+      "https://assets.codehub.cn/micro-frontend/team/team-39f6706c.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/team/runtime~team-1b4ef5b2.js",
+      "https://assets.codehub.cn/micro-frontend/team/runtime~team-436cf44c.js",
       "https://assets.codehub.cn/micro-frontend/team/vendors~team-39efda7f.js",
-      "https://assets.codehub.cn/micro-frontend/team/uikit~team-26ec0ac5.js",
-      "https://assets.codehub.cn/micro-frontend/team/team-4d341d2a.js"
+      "https://assets.codehub.cn/micro-frontend/team/uikit~team-a75b7361.js",
+      "https://assets.codehub.cn/micro-frontend/team/team-39f6706c.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/team/"
@@ -81,19 +81,19 @@
     "name": "account",
     "description": "个人设置",
     "match": "^/user/account",
-    "changelog": "PRODUCT：account\nCOMMIT：4b6d251c1f34332eb0dfbc613fd9520c8cdf902a\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/164695/build/449/pipeline\n",
-    "commitId": "4b6d251c1f34332eb0dfbc613fd9520c8cdf902a",
-    "changeAt": "2020-09-01 17:21:02.0",
+    "changelog": "PRODUCT：account\nCOMMIT：2a1efc900b7810199c8a61c4b8d2ba52fc7d2c73\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/164695/build/477/pipeline\n",
+    "commitId": "2a1efc900b7810199c8a61c4b8d2ba52fc7d2c73",
+    "changeAt": "2020-09-10 14:42:41.0",
     "css": [
       "https://assets.codehub.cn/micro-frontend/account/uikit~account-10338d91.css",
       "https://assets.codehub.cn/micro-frontend/account/vendors~account-04d17fb7.css",
-      "https://assets.codehub.cn/micro-frontend/account/account-808152a8.css"
+      "https://assets.codehub.cn/micro-frontend/account/account-7c1b1437.css"
     ],
     "js": [
       "https://assets.codehub.cn/micro-frontend/account/runtime~account-dc198a65.js",
       "https://assets.codehub.cn/micro-frontend/account/uikit~account-10338d91.js",
       "https://assets.codehub.cn/micro-frontend/account/vendors~account-04d17fb7.js",
-      "https://assets.codehub.cn/micro-frontend/account/account-808152a8.js"
+      "https://assets.codehub.cn/micro-frontend/account/account-7c1b1437.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/account/"
@@ -103,17 +103,17 @@
     "name": "projects",
     "description": "项目列表",
     "match": "^/user/(notifications|projects)",
-    "changelog": "PRODUCT：projects\nCOMMIT：12f9c62b6d6657c69bc97163e7bfbfaa94f730f5\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/177780/build/242/pipeline\n",
-    "commitId": "12f9c62b6d6657c69bc97163e7bfbfaa94f730f5",
-    "changeAt": "2020-08-18 17:51:04.0",
+    "changelog": "PRODUCT：projects\nCOMMIT：49e7443c02ee2d0338aa6d44ba899fb48c3f1b80\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/177780/build/254/pipeline\n",
+    "commitId": "49e7443c02ee2d0338aa6d44ba899fb48c3f1b80",
+    "changeAt": "2020-09-09 17:55:28.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/projects/projects-1aa4662c.css"
+      "https://assets.codehub.cn/micro-frontend/projects/projects-15747ba6.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/projects/runtime~projects-186135f9.js",
+      "https://assets.codehub.cn/micro-frontend/projects/runtime~projects-0f7cc39f.js",
       "https://assets.codehub.cn/micro-frontend/projects/uikit~projects-51f2f265.js",
-      "https://assets.codehub.cn/micro-frontend/projects/vendors~projects-3b765789.js",
-      "https://assets.codehub.cn/micro-frontend/projects/projects-1aa4662c.js"
+      "https://assets.codehub.cn/micro-frontend/projects/vendors~projects-404d66f2.js",
+      "https://assets.codehub.cn/micro-frontend/projects/projects-15747ba6.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/projects/"
@@ -164,17 +164,17 @@
     "name": "teamokr",
     "description": "团队目标",
     "match": "^/goals",
-    "changelog": "PRODUCT：teamokr\nCOMMIT：2ececb1125ef898f8313fa63d53c84161c11483d\nCI：https://codingcorp.coding.net/p/project-management/ci/job/223195/build/97/pipeline\n",
-    "commitId": "2ececb1125ef898f8313fa63d53c84161c11483d",
-    "changeAt": "2020-08-20 13:40:14.0",
+    "changelog": "PRODUCT：teamokr\nCOMMIT：8fdd3438c18cdf001b20f7e0af2ba03ee8d4cee1\nCI：https://codingcorp.coding.net/p/project-management/ci/job/223195/build/108/pipeline\n",
+    "commitId": "8fdd3438c18cdf001b20f7e0af2ba03ee8d4cee1",
+    "changeAt": "2020-09-09 17:33:51.0",
     "css": [
-      "https://assets.codehub.cn/project-management/team-okr/teamokr-745bf4a6.css"
+      "https://assets.codehub.cn/project-management/team-okr/teamokr-97ab5293.css"
     ],
     "js": [
       "https://assets.codehub.cn/project-management/team-okr/runtime~teamokr-c54f0e31.js",
-      "https://assets.codehub.cn/project-management/team-okr/uikit~teamokr-2f8cb755.js",
-      "https://assets.codehub.cn/project-management/team-okr/vendors~teamokr-e424a500.js",
-      "https://assets.codehub.cn/project-management/team-okr/teamokr-745bf4a6.js"
+      "https://assets.codehub.cn/project-management/team-okr/uikit~teamokr-5723a1a0.js",
+      "https://assets.codehub.cn/project-management/team-okr/vendors~teamokr-f350cd1e.js",
+      "https://assets.codehub.cn/project-management/team-okr/teamokr-97ab5293.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/project-management/team-okr",
@@ -185,55 +185,52 @@
     "name": "ci",
     "description": "持续集成",
     "match": "^/p/[^/]+/ci|^/ci/agent",
-    "changelog": "PRODUCT：ci\nCOMMIT：d7d4e6ba12d24fa42bb59339666fa27f17975a5a\nCI：https://codingcorp.coding.net/p/coding-ci/ci/job/85702/build/7385/pipeline\n",
-    "commitId": "d7d4e6ba12d24fa42bb59339666fa27f17975a5a",
-    "changeAt": "2020-09-02 17:09:21.0",
+    "changelog": "PRODUCT：ci\nCOMMIT：f696bf85b9adb3d0280ecdbdf94747676e1878ef\nCI：https://codingcorp.coding.net/p/coding-ci/ci/job/85702/build/7510/pipeline\n",
+    "commitId": "f696bf85b9adb3d0280ecdbdf94747676e1878ef",
+    "changeAt": "2020-09-08 14:13:54.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/ci/coding-ci-frontend/static/css/index.f678ec06.chunk.css"
+      "https://assets.codehub.cn/micro-frontend/ci/coding-ci-frontend/static/css/index.c955392b.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/ci/coding-ci-frontend/static/js/runtime~index.385600c9.js",
-      "https://assets.codehub.cn/micro-frontend/ci/coding-ci-frontend/static/js/index.e01afd27.chunk.js"
+      "https://assets.codehub.cn/micro-frontend/ci/coding-ci-frontend/static/js/runtime~index.bc88cb7c.js",
+      "https://assets.codehub.cn/micro-frontend/ci/coding-ci-frontend/static/js/index.a5a785f1.chunk.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/ci/"
     ]
   },
   {
-    "name": "project-management",
-    "description": "项目协同",
-    "match": "^\\/(issues|p\\/[^/]+\\/(pm-initialize|backlog|iterations|all|epics|requirements|assignments|bug-tracking|subtasks|stats/bug))",
-    "changelog": "PRODUCT：project-management\nCOMMIT：fa03a218af8f297573a7aaf468569411483f2795\nCI：https://codingcorp.coding.net/p/project-management/ci/job/256238/build/324/pipeline\n",
-    "commitId": "fa03a218af8f297573a7aaf468569411483f2795",
-    "changeAt": "2020-09-03 13:43:38.0",
-    "css": [
-      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/css/index.7519a7cb.chunk.css"
-    ],
+    "name": "vcs",
+    "description": "代码仓库",
+    "match": "^\\/p\\/[^\\/]+((\\/d\\/[^\\/]+)?)\\/(git|new-depot|svn|landing)|^\\/public-resource\\/public-repos|^\\/import",
+    "changelog": "PRODUCT：vcs\nCOMMIT：5631ed79f8cebb9037d883377840f20be9f7e290\nCI：https://codingcorp.coding.net/p/coding-dev/ci/job/115353/build/2601/pipeline\n",
+    "commitId": "dirty",
+    "changeAt": "2020-09-10 14:26:12.0",
+    "css": [],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/vendors~index.21116876.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/runtime~index.da09c3a1.js",
-      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/chunk-uikit.9a621eca.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/chunk-bizcharts.c5e684b2.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/index.59c48165.chunk.js"
+      "http://10.94.100.141:3000/static-git/js/runtime~index.bundle.js",
+      "http://10.94.100.141:3000/static-git/js/runtime~index.bundle.js.map",
+      "http://10.94.100.141:3000/static-git/js/index.chunk.js",
+      "http://10.94.100.141:3000/static-git/js/index.chunk.js.map"
     ],
     "prefix": [
-      "https://assets.codehub.cn/micro-frontend/project-management/"
+      "http://10.94.100.141:3000/"
     ]
   },
   {
     "name": "testing",
     "description": "测试管理",
     "match": "^/p/[^/]+/testing",
-    "changelog": "PRODUCT：testing\nCOMMIT：7a6a0afd1cbec83af056b1f88e24a7f7ac120bf0\nCI：https://codingcorp.coding.net/p/feie.work/ci/job/256612/build/8/pipeline\n",
-    "commitId": "7a6a0afd1cbec83af056b1f88e24a7f7ac120bf0",
-    "changeAt": "2020-07-21 18:03:59.0",
+    "changelog": "PRODUCT：testing\nCOMMIT：a800a9cc878fb074ba3564626166b7f88728a019\nCI：https://codingcorp.coding.net/p/feie.work/ci/job/256612/build/31/pipeline\n",
+    "commitId": "a800a9cc878fb074ba3564626166b7f88728a019",
+    "changeAt": "2020-09-08 12:08:02.0",
     "css": [
       "https://assets.codehub.cn/micro-frontend/testing-front/static/css/app.e9f507fa.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/testing-front/static/js/manifest.740c8e058ca507ac92aa.js",
-      "https://assets.codehub.cn/micro-frontend/testing-front/static/js/vendor.a9d23dc3fe12ab8f43f3.js",
-      "https://assets.codehub.cn/micro-frontend/testing-front/static/js/app.a6bee0de37f8fa9c04ec.js"
+      "https://assets.codehub.cn/micro-frontend/testing-front/static/js/manifest.d02afb85ad471bb6b89a.js",
+      "https://assets.codehub.cn/micro-frontend/testing-front/static/js/vendor.5b9100c8cf206312b997.js",
+      "https://assets.codehub.cn/micro-frontend/testing-front/static/js/app.6c87683676f99abebf03.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/testing-front/"
@@ -243,16 +240,16 @@
     "name": "api",
     "description": "API文档管理",
     "match": "^/p/[^/]+/api-docs",
-    "changelog": "PRODUCT：api\nCOMMIT：f780561784e74f1adfa1ea1132e1f98a9ed7d415\nCI：https://codingcorp.coding.net/p/api-doc-management/ci/job/256565/build/68/pipeline\n",
-    "commitId": "f780561784e74f1adfa1ea1132e1f98a9ed7d415",
-    "changeAt": "2020-08-28 16:12:36.0",
+    "changelog": "PRODUCT：api\nCOMMIT：5cfcd15c6fb1995473344c84b3cf0201f976443c\nCI：https://codingcorp.coding.net/p/api-doc-management/ci/job/256565/build/82/pipeline\n",
+    "commitId": "5cfcd15c6fb1995473344c84b3cf0201f976443c",
+    "changeAt": "2020-09-11 10:41:45.0",
     "css": [
       "https://assets.codehub.cn/micro-frontend/api-docs/static/css/main.87a49a2d.css"
     ],
     "js": [
       "https://assets.codehub.cn/micro-frontend/api-docs/static/js/manifest.30111c095ed366b5cbc9.js",
-      "https://assets.codehub.cn/micro-frontend/api-docs/static/js/vendor.fb2875fa439b849f35f6.js",
-      "https://assets.codehub.cn/micro-frontend/api-docs/static/js/main.152105e51f1117350d80.js"
+      "https://assets.codehub.cn/micro-frontend/api-docs/static/js/vendor.6d9470d5e9af06e66482.js",
+      "https://assets.codehub.cn/micro-frontend/api-docs/static/js/main.f7aac962904dd205ab6d.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/api-docs/"
@@ -262,16 +259,16 @@
     "name": "artifacts",
     "description": "制品库",
     "match": "^/p/[^/]+/artifacts|^/public-resource",
-    "changelog": "PRODUCT：artifacts\nCOMMIT：c1385e3c3b381e5be9ff96bbab10ab787e95cacd\nCI：https://codingcorp.coding.net/p/coding-artifacts/ci/job/256310/build/556/pipeline\n",
-    "commitId": "c1385e3c3b381e5be9ff96bbab10ab787e95cacd",
-    "changeAt": "2020-09-03 12:14:07.0",
+    "changelog": "PRODUCT：artifacts\nCOMMIT：8e11a082428b1997e9ff20179b2e0405e3de15b3\nCI：https://codingcorp.coding.net/p/coding-artifacts/ci/job/256310/build/749/pipeline\n",
+    "commitId": "8e11a082428b1997e9ff20179b2e0405e3de15b3",
+    "changeAt": "2020-09-09 11:44:53.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/artifacts/coding-artifacts-frontend/static/css/main.088861b39817.chunk.css"
+      "https://assets.codehub.cn/micro-frontend/artifacts/coding-artifacts-frontend/static/css/main.57fcfdba16ed.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/artifacts/coding-artifacts-frontend/static/js/runtime~main.76a03ee47056.js",
-      "https://assets.codehub.cn/micro-frontend/artifacts/coding-artifacts-frontend/static/js/main.ae511859a586.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/artifacts/coding-artifacts-frontend/static/js/app~artifacts.5da9e4569c8b.chunk.js"
+      "https://assets.codehub.cn/micro-frontend/artifacts/coding-artifacts-frontend/static/js/runtime~main.63f2b4e8cb4e.js",
+      "https://assets.codehub.cn/micro-frontend/artifacts/coding-artifacts-frontend/static/js/main.899b55c21b43.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/artifacts/coding-artifacts-frontend/static/js/app~artifacts.ebc17691d6f9.chunk.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/artifacts/"
@@ -281,17 +278,17 @@
     "name": "cd-spin",
     "description": "持续部署",
     "match": "^/p/[^/]+/cd-spin|^/admin/deployment",
-    "changelog": "PRODUCT：cd-spin\nCOMMIT：08f4ec52335b50255399df90fc803850134ada90\nCI：https://codingcorp.coding.net/p/cd/ci/job/257504/build/339/pipeline\n",
-    "commitId": "08f4ec52335b50255399df90fc803850134ada90",
-    "changeAt": "2020-09-01 16:47:49.0",
+    "changelog": "PRODUCT：cd-spin\nCOMMIT：d4f977b6518c35b724cb73dad407cfe5b4a07a9c\nCI：https://codingcorp.coding.net/p/cd/ci/job/257504/build/375/pipeline\n",
+    "commitId": "d4f977b6518c35b724cb73dad407cfe5b4a07a9c",
+    "changeAt": "2020-09-08 16:55:55.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/cd-spin/coding-cd-spin-frontend/static/css/main.71b0ecbdfea1.chunk.css",
+      "https://assets.codehub.cn/micro-frontend/cd-spin/coding-cd-spin-frontend/static/css/main.42b73a58fcb5.chunk.css",
       "https://assets.codehub.cn/micro-frontend/cd-spin/coding-cd-spin-frontend/static/css/vendors~cdspin.975761223586.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/cd-spin/coding-cd-spin-frontend/static/js/runtime~main.aa29b0f9a93e.js",
-      "https://assets.codehub.cn/micro-frontend/cd-spin/coding-cd-spin-frontend/static/js/main.4a0d99f02421.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/cd-spin/coding-cd-spin-frontend/static/js/vendors~cdspin.47e2ac35c30e.chunk.js"
+      "https://assets.codehub.cn/micro-frontend/cd-spin/coding-cd-spin-frontend/static/js/runtime~main.6c01c02d5426.js",
+      "https://assets.codehub.cn/micro-frontend/cd-spin/coding-cd-spin-frontend/static/js/main.3f0ca91068f9.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/cd-spin/coding-cd-spin-frontend/static/js/vendors~cdspin.47865d7dd258.chunk.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/cd-spin/"
@@ -301,15 +298,17 @@
     "name": "activity",
     "description": "项目动态",
     "match": "^/activities|^/p/[^/]+$|^/p/[^/]+/$",
-    "changelog": "PRODUCT：activity\nCOMMIT：c2da2e846d47bc2d74af3d68269d1eff5c043270\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/251933/build/59/pipeline\n",
-    "commitId": "c2da2e846d47bc2d74af3d68269d1eff5c043270",
-    "changeAt": "2020-08-21 17:58:39.0",
+    "changelog": "PRODUCT：activity\nCOMMIT：faba7df96110703ab0b6d1f3a33a396016eb8ec3\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/251933/build/100/pipeline\n",
+    "commitId": "faba7df96110703ab0b6d1f3a33a396016eb8ec3",
+    "changeAt": "2020-09-11 14:40:50.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/activity/index.8e412bd9.chunk.css"
+      "https://assets.codehub.cn/micro-frontend/activity/index.d3993c7b.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/activity/runtime~index.c21901f2.js",
-      "https://assets.codehub.cn/micro-frontend/activity/index.a708060b.chunk.js"
+      "https://assets.codehub.cn/micro-frontend/activity/runtime~index.2848d306.js",
+      "https://assets.codehub.cn/micro-frontend/activity/index.b714dc26.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/activity/uikit~index.0af481d5.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/activity/vendors~index.d9450e52.chunk.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/activity/"
@@ -319,17 +318,17 @@
     "name": "user",
     "description": "工作台",
     "match": "^/user$",
-    "changelog": "PRODUCT：user\nCOMMIT：4b39655c87a67787c865b6e7c273e06f8f13c3bc\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/251948/build/78/pipeline\n",
-    "commitId": "4b39655c87a67787c865b6e7c273e06f8f13c3bc",
-    "changeAt": "2020-08-28 15:54:23.0",
+    "changelog": "PRODUCT：user\nCOMMIT：21a8d13103eb158b6635e11411a31178e47d18e3\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/251948/build/105/pipeline\n",
+    "commitId": "21a8d13103eb158b6635e11411a31178e47d18e3",
+    "changeAt": "2020-09-04 16:55:42.0",
     "css": [
       "https://assets.codehub.cn/micro-frontend/worktable/index.82016857.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/worktable/runtime~index.be2a7dcb.js",
-      "https://assets.codehub.cn/micro-frontend/worktable/index.98c20bd4.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/worktable/uikit~index.4c1095e5.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/worktable/vendors~index.92c5ceea.chunk.js"
+      "https://assets.codehub.cn/micro-frontend/worktable/runtime~index.eda854a1.js",
+      "https://assets.codehub.cn/micro-frontend/worktable/index.6caf48fd.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/worktable/uikit~index.7b95ef5d.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/worktable/vendors~index.44893f56.chunk.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/worktable/"
@@ -339,17 +338,17 @@
     "name": "code-analysis",
     "description": "代码分析",
     "match": "^/p/[^/]+/code-analysis",
-    "changelog": "PRODUCT：code-analysis\nCOMMIT：8786fc2dd7c5aa34f6947ceed52a221bf850f99a\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/251893/build/59/pipeline\n",
-    "commitId": "8786fc2dd7c5aa34f6947ceed52a221bf850f99a",
-    "changeAt": "2020-07-16 15:09:51.0",
+    "changelog": "PRODUCT：code-analysis\nCOMMIT：a5089513aeedb239525d896eb43fae4c3d37b4f7\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/251893/build/285/pipeline\n",
+    "commitId": "a5089513aeedb239525d896eb43fae4c3d37b4f7",
+    "changeAt": "2020-09-10 14:26:42.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/code-analysis/code-analysis-8ae1856d.css"
+      "https://assets.codehub.cn/micro-frontend/code-analysis/code-analysis-b7a8d356.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/code-analysis/runtime~code-analysis-5f7f3286.js",
-      "https://assets.codehub.cn/micro-frontend/code-analysis/vendors~code-analysis-58251421.js",
-      "https://assets.codehub.cn/micro-frontend/code-analysis/uikit~code-analysis-e2c7da93.js",
-      "https://assets.codehub.cn/micro-frontend/code-analysis/code-analysis-8ae1856d.js"
+      "https://assets.codehub.cn/micro-frontend/code-analysis/runtime~code-analysis-38dd7295.js",
+      "https://assets.codehub.cn/micro-frontend/code-analysis/vendors~code-analysis-29613d90.js",
+      "https://assets.codehub.cn/micro-frontend/code-analysis/uikit~code-analysis-56b5c81e.js",
+      "https://assets.codehub.cn/micro-frontend/code-analysis/code-analysis-b7a8d356.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/code-analysis/"
@@ -359,17 +358,17 @@
     "name": "wiki",
     "description": "wiki",
     "match": "^/p/[^/]+/wiki|^/s/",
-    "changelog": "PRODUCT：wiki\nCOMMIT：7cc7dbb1a9e1423a476e10d57c4b4216f1048f2d\nCI：https://codingcorp.coding.net/p/documents/ci/job/255255/build/203/pipeline\n",
-    "commitId": "7cc7dbb1a9e1423a476e10d57c4b4216f1048f2d",
-    "changeAt": "2020-08-27 13:41:31.0",
+    "changelog": "PRODUCT：wiki\nCOMMIT：53f80ef93a3e50e907e157c46c2fe9c9bcd61c3a\nCI：https://codingcorp.coding.net/p/documents/ci/job/255255/build/243/pipeline\n",
+    "commitId": "53f80ef93a3e50e907e157c46c2fe9c9bcd61c3a",
+    "changeAt": "2020-09-11 14:08:19.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/wiki/coding-wiki-frontend/static/css/index.bb641723.chunk.css"
+      "https://assets.codehub.cn/micro-frontend/wiki/coding-wiki-frontend/static/css/index.5bdcaa4c.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/wiki/coding-wiki-frontend/static/js/runtime~index.f0256743.js",
-      "https://assets.codehub.cn/micro-frontend/wiki/coding-wiki-frontend/static/js/index.77978161.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/wiki/coding-wiki-frontend/static/js/uikit~index.9f177bcc.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/wiki/coding-wiki-frontend/static/js/vendors~index.24efc52b.chunk.js"
+      "https://assets.codehub.cn/micro-frontend/wiki/coding-wiki-frontend/static/js/runtime~index.7efea822.js",
+      "https://assets.codehub.cn/micro-frontend/wiki/coding-wiki-frontend/static/js/index.2d3ffd2e.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/wiki/coding-wiki-frontend/static/js/uikit~index.ae56ca08.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/wiki/coding-wiki-frontend/static/js/vendors~index.9798f86c.chunk.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/wiki/"
@@ -379,35 +378,55 @@
     "name": "files",
     "description": "文件网盘",
     "match": "^/(p/[^/]+/(files|attachment)|s/[^/]+)",
-    "changelog": "PRODUCT：files\nCOMMIT：ca03beadd93c41deab80d72548a11635e9b07852\nCI：https://codingcorp.coding.net/p/documents/ci/job/256169/build/120/pipeline\n",
-    "commitId": "ca03beadd93c41deab80d72548a11635e9b07852",
-    "changeAt": "2020-08-31 13:45:07.0",
+    "changelog": "PRODUCT：files\nCOMMIT：cb0bbee08991d8a279b4f4925fa11f00b96bd438\nCI：https://codingcorp.coding.net/p/documents/ci/job/256169/build/138/pipeline\n",
+    "commitId": "cb0bbee08991d8a279b4f4925fa11f00b96bd438",
+    "changeAt": "2020-09-11 14:08:28.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/files/coding-files-frontend/static/css/index.ed8fb47c.chunk.css"
+      "https://assets.codehub.cn/micro-frontend/files/coding-files-frontend/static/css/index.2c0ee477.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/files/coding-files-frontend/static/js/runtime~index.cfca60a4.js",
-      "https://assets.codehub.cn/micro-frontend/files/coding-files-frontend/static/js/index.4c69348f.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/files/coding-files-frontend/static/js/uikit~index.4ea321fa.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/files/coding-files-frontend/static/js/vendors~index.d7fd9b61.chunk.js"
+      "https://assets.codehub.cn/micro-frontend/files/coding-files-frontend/static/js/runtime~index.0922f225.js",
+      "https://assets.codehub.cn/micro-frontend/files/coding-files-frontend/static/js/index.e2df8fee.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/files/coding-files-frontend/static/js/uikit~index.889a2240.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/files/coding-files-frontend/static/js/vendors~index.929d89c3.chunk.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/files/"
     ]
   },
   {
+    "name": "login-tencent",
+    "description": "腾讯云登录",
+    "match": "^/(register|login|signin$|signup$)",
+    "changelog": "PRODUCT：login-tencent\nCOMMIT：a7de1c0096b30b443ba8cdccf2df188b1da10519\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/252962/build/416/pipeline\n",
+    "commitId": "a7de1c0096b30b443ba8cdccf2df188b1da10519",
+    "changeAt": "2020-09-10 18:20:54.0",
+    "css": [
+      "https://assets.codehub.cn/micro-frontend/login-tencent/login-tencent-d1f5ed08.css"
+    ],
+    "js": [
+      "https://assets.codehub.cn/micro-frontend/login-tencent/runtime~login-tencent-b985ee7f.js",
+      "https://assets.codehub.cn/micro-frontend/login-tencent/uikit~login-tencent-f995670e.js",
+      "https://assets.codehub.cn/micro-frontend/login-tencent/vendors~login-tencent-bd763e38.js",
+      "https://assets.codehub.cn/micro-frontend/login-tencent/login-tencent-d1f5ed08.js"
+    ],
+    "prefix": [
+      "https://assets.codehub.cn/micro-frontend/login-tencent/"
+    ]
+  },
+  {
     "name": "pages",
     "description": "Pages",
-    "match": "^/p/[^/]+/cd/pages/static",
-    "changelog": "PRODUCT：pages\nCOMMIT：85d3abfea1b6bb88224ceeedc4dc7b1bbc91bce2\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/254549/build/36/pipeline\n",
-    "commitId": "85d3abfea1b6bb88224ceeedc4dc7b1bbc91bce2",
-    "changeAt": "2020-09-02 18:11:46.0",
+    "match": "^/p/[^/]+/cd/(pages|website)/static",
+    "changelog": "PRODUCT：pages\nCOMMIT：0676f2d6836750ee5f95407688bc4ecc5cca39ed\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/254549/build/43/pipeline\n",
+    "commitId": "0676f2d6836750ee5f95407688bc4ecc5cca39ed",
+    "changeAt": "2020-09-09 20:26:31.0",
     "css": [
       "https://assets.codehub.cn/micro-frontend/pages/index.f3f2e515.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/pages/runtime~index.5cb5b15a.js",
-      "https://assets.codehub.cn/micro-frontend/pages/index.3a9163d1.chunk.js"
+      "https://assets.codehub.cn/micro-frontend/pages/runtime~index.bca0fa79.js",
+      "https://assets.codehub.cn/micro-frontend/pages/index.06b99f7c.chunk.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/pages/"
@@ -417,17 +436,17 @@
     "name": "metric",
     "description": "团队度量",
     "match": "^/metric",
-    "changelog": "PRODUCT：metric\nCOMMIT：a6bca8f322546cd16b1c4a67ed260f1cb99820fe\nCI：https://codingcorp.coding.net/p/project-management/ci/job/246141/build/78/pipeline\n",
-    "commitId": "a6bca8f322546cd16b1c4a67ed260f1cb99820fe",
-    "changeAt": "2020-07-01 16:14:18.0",
+    "changelog": "PRODUCT：metric\nCOMMIT：baa2d2715c6824407279f483cbd2d7d87e1a769b\nCI：https://codingcorp.coding.net/p/project-management/ci/job/246141/build/117/pipeline\n",
+    "commitId": "baa2d2715c6824407279f483cbd2d7d87e1a769b",
+    "changeAt": "2020-09-11 14:36:48.0",
     "css": [
-      "https://assets.codehub.cn/project-management/team-resources/metric-047488f3.css"
+      "https://assets.codehub.cn/project-management/team-resources/metric-4a3de105.css"
     ],
     "js": [
-      "https://assets.codehub.cn/project-management/team-resources/runtime~metric-2584a819.js",
-      "https://assets.codehub.cn/project-management/team-resources/vendors~metric-4d50043a.js",
-      "https://assets.codehub.cn/project-management/team-resources/uikit~metric-5e592812.js",
-      "https://assets.codehub.cn/project-management/team-resources/metric-047488f3.js"
+      "https://assets.codehub.cn/project-management/team-resources/runtime~metric-f79cb1d7.js",
+      "https://assets.codehub.cn/project-management/team-resources/vendors~metric-0184d966.js",
+      "https://assets.codehub.cn/project-management/team-resources/uikit~metric-d3a2fb64.js",
+      "https://assets.codehub.cn/project-management/team-resources/metric-4a3de105.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/project-management/team-resources",
@@ -438,15 +457,15 @@
     "name": "search",
     "description": " 搜索页",
     "match": "^/search",
-    "changelog": "PRODUCT：search\nCOMMIT：5826bba1f9f48a9a84f5df38a0567f062b6bc648\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/259902/build/12/pipeline\n",
-    "commitId": "5826bba1f9f48a9a84f5df38a0567f062b6bc648",
-    "changeAt": "2020-07-16 15:16:21.0",
+    "changelog": "PRODUCT：search\nCOMMIT：769e0187663f2c5d5fa73a7dca8f8092bf938dc8\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/259902/build/38/pipeline\n",
+    "commitId": "769e0187663f2c5d5fa73a7dca8f8092bf938dc8",
+    "changeAt": "2020-09-07 17:39:30.0",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/search/index.49e96087.chunk.css"
+      "https://assets.codehub.cn/micro-frontend/search/index.7a66c162.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/search/runtime~index.6b315095.js",
-      "https://assets.codehub.cn/micro-frontend/search/index.fb39367d.chunk.js"
+      "https://assets.codehub.cn/micro-frontend/search/runtime~index.799dd36a.js",
+      "https://assets.codehub.cn/micro-frontend/search/index.a0291047.chunk.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/micro-frontend/search/"
@@ -497,17 +516,17 @@
     "name": "dashboard",
     "description": "仪表盘",
     "match": "^/dashboard",
-    "changelog": "PRODUCT：dashboard\nCOMMIT：f9382bb8e182cd413a8bb2107f1cdb78177719ca\nCI：https://codingcorp.coding.net/p/project-management/ci/job/259721/build/102/pipeline\n",
-    "commitId": "f9382bb8e182cd413a8bb2107f1cdb78177719ca",
-    "changeAt": "2020-08-26 10:05:26.0",
+    "changelog": "PRODUCT：dashboard\nCOMMIT：e6fd8102a29b82d67812c4e74a8363bf775a64ff\nCI：https://codingcorp.coding.net/p/project-management/ci/job/259721/build/114/pipeline\n",
+    "commitId": "e6fd8102a29b82d67812c4e74a8363bf775a64ff",
+    "changeAt": "2020-09-11 09:45:33.0",
     "css": [
-      "https://assets.codehub.cn/project-management/coding-i-dashboard/dashboard-88a725d4.css"
+      "https://assets.codehub.cn/project-management/coding-i-dashboard/dashboard-b6afc2c7.css"
     ],
     "js": [
       "https://assets.codehub.cn/project-management/coding-i-dashboard/runtime~dashboard-b71080c9.js",
-      "https://assets.codehub.cn/project-management/coding-i-dashboard/vendors~dashboard-fbb1b2e2.js",
-      "https://assets.codehub.cn/project-management/coding-i-dashboard/uikit~dashboard-db0caba4.js",
-      "https://assets.codehub.cn/project-management/coding-i-dashboard/dashboard-88a725d4.js"
+      "https://assets.codehub.cn/project-management/coding-i-dashboard/vendors~dashboard-e6e3bb14.js",
+      "https://assets.codehub.cn/project-management/coding-i-dashboard/uikit~dashboard-a813f084.js",
+      "https://assets.codehub.cn/project-management/coding-i-dashboard/dashboard-b6afc2c7.js"
     ],
     "prefix": [
       "https://assets.codehub.cn/project-management/coding-i-dashboard",
@@ -515,43 +534,45 @@
     ]
   },
   {
-    "name": "login-tencent",
-    "description": "腾讯云登录",
-    "match": "^/(register|login|signin$|signup$)",
-    "changelog": "PRODUCT：login-tencent\nCOMMIT：f2a4555b8b5de93804b32abff6a689548bb8e78c\nCI：https://codingcorp.coding.net/p/micro-frontend/ci/job/252962/build/398/pipeline\n",
-    "commitId": "f2a4555b8b5de93804b32abff6a689548bb8e78c",
-    "changeAt": "2020-09-03 15:21:08.0",
+    "name": "project-management",
+    "description": "项目协同",
+    "match": "^/(issues|p/[^/]+/(pm-initialize|backlog|iterations|all|epics|requirements|assignments|bug-tracking|subtasks|stats/bug))",
+    "changelog": "PRODUCT：project-management\nCOMMIT：b4d9e51c7bbbec42cf5eb9471f5f2274beef7605\nCI：https://codingcorp.coding.net/p/project-management/ci/job/256238/build/379/pipeline\n",
+    "commitId": "b4d9e51c7bbbec42cf5eb9471f5f2274beef7605",
+    "changeAt": "2020-09-11 14:54:48.598",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/login-tencent/login-tencent-61eca860.css"
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/css/index.acb051e4.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/login-tencent/runtime~login-tencent-c0b80750.js",
-      "https://assets.codehub.cn/micro-frontend/login-tencent/uikit~login-tencent-2c83b777.js",
-      "https://assets.codehub.cn/micro-frontend/login-tencent/vendors~login-tencent-23b4b2ba.js",
-      "https://assets.codehub.cn/micro-frontend/login-tencent/login-tencent-61eca860.js"
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/vendors~index.b0cb8ec5.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/runtime~index.d3bf36b8.js",
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/chunk-uikit.31923d07.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/chunk-bizcharts.3b752088.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/index.16799b76.chunk.js"
     ],
     "prefix": [
-      "https://assets.codehub.cn/micro-frontend/login-tencent/"
+      "https://assets.codehub.cn/micro-frontend/project-management/"
     ]
   },
   {
-    "name": "vcs",
-    "description": "代码仓库",
-    "match": "^\\/p\\/[^\\/]+((\\/d\\/[^\\/]+)?)\\/(git|new-depot|svn|landing)|^\\/public-resource\\/public-repos|^\\/import",
-    "changelog": "PRODUCT：vcs\nCOMMIT：c9be580bfb2db13b4f3510db081123c9bb405186\nCI：https://codingcorp.coding.net/p/coding-dev/ci/job/115353/build/2474/pipeline\n",
-    "commitId": "c9be580bfb2db13b4f3510db081123c9bb405186",
-    "changeAt": "2020-09-03 16:03:38.0",
+    "name": "project-management-exclaves",
+    "description": "项目协同 widgets",
+    "match": "^/user$|^/p/[^/]+/testing",
+    "changelog": "PRODUCT：project-management-exclaves\nCOMMIT：b4d9e51c7bbbec42cf5eb9471f5f2274beef7605\nCI：https://codingcorp.coding.net/p/project-management/ci/job/256238/build/379/pipeline\n",
+    "commitId": "b4d9e51c7bbbec42cf5eb9471f5f2274beef7605",
+    "changeAt": "2020-09-11 14:54:48.602",
     "css": [
-      "https://assets.codehub.cn/micro-frontend/vcs-frontend/coding-vcs/static/css/vendors~index.7ef610.chunk.css",
-      "https://assets.codehub.cn/micro-frontend/vcs-frontend/coding-vcs/static/css/index.2d296b.chunk.css"
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/css/index.acb051e4.chunk.css"
     ],
     "js": [
-      "https://assets.codehub.cn/micro-frontend/vcs-frontend/coding-vcs/static/js/runtime~index.6b9be1.js",
-      "https://assets.codehub.cn/micro-frontend/vcs-frontend/coding-vcs/static/js/vendors~index.4535db.chunk.js",
-      "https://assets.codehub.cn/micro-frontend/vcs-frontend/coding-vcs/static/js/index.d52fdf.chunk.js"
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/vendors~index.b0cb8ec5.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/runtime~index.d3bf36b8.js",
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/chunk-uikit.31923d07.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/chunk-bizcharts.3b752088.chunk.js",
+      "https://assets.codehub.cn/micro-frontend/project-management/coding-project-management-frontend/static/js/index.16799b76.chunk.js"
     ],
     "prefix": [
-      "https://assets.codehub.cn/micro-frontend/vcs-frontend/"
+      "https://assets.codehub.cn/micro-frontend/project-management/"
     ]
   }
 ]
