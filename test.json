@@ -185,25 +185,18 @@
     "description": "代码仓库",
     "match": "^\\/p\\/[^\\/]+((\\/d\\/[^\\/]+)?)\\/(git|new-depot|svn|landing)|^\\/public-resource\\/public-repos|^\\/import",
     "changelog": "PRODUCT：vcs\nCOMMIT：b2f4c964fd2f0930a7e0ece226e2149703c1dd75\nCI：https://codingcorp.coding.net/p/vcs-project/ci/job/330252/build/401/pipeline\nnull",
-    // "commitId": "b2f4c964fd2f0930a7e0ece226e2149703c1dd75",
     "commitId": "99b117df64f9df134849df363f7008d953402284",
     "changeAt": "2020-12-21 17:39:27.0",
     "css": [
       "https://e-minio.coding.net/production/micro-frontend/vcs-frontend/coding-vcs/static/css/vendors~index.ba8bce.chunk.css",
       "https://e-minio.coding.net/production/micro-frontend/vcs-frontend/coding-vcs/static/css/index.77e35f.chunk.css"
-    //   "https://assets.codehub.cn/micro-frontend/vcs-frontend/coding-vcs/static/css/vendors~index.ba8bce.chunk.css",
-    //   "https://assets.codehub.cn/micro-frontend/vcs-frontend/coding-vcs/static/css/index.a56cf1.chunk.css"
     ],
     "js": [
       "https://e-minio.coding.net/production/micro-frontend/vcs-frontend/coding-vcs/static/js/runtime~index.c729ff.js",
       "https://e-minio.coding.net/production/micro-frontend/vcs-frontend/coding-vcs/static/js/vendors~index.ab70f6.chunk.js",
       "https://e-minio.coding.net/production/micro-frontend/vcs-frontend/coding-vcs/static/js/index.3a4bde.chunk.js"
-    //   "https://assets.codehub.cn/micro-frontend/vcs-frontend/coding-vcs/static/js/runtime~index.673e2b.js",
-    //   "https://assets.codehub.cn/micro-frontend/vcs-frontend/coding-vcs/static/js/vendors~index.51e5b3.chunk.js",
-    //   "https://assets.codehub.cn/micro-frontend/vcs-frontend/coding-vcs/static/js/index.05077f.chunk.js"
     ],
     "prefix": [
-    //   "https://assets.codehub.cn/micro-frontend/vcs-frontend/"
       "https://e-minio.coding.net/production/micro-frontend/vcs-frontend/"
     ]
   },
